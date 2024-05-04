@@ -1,0 +1,124 @@
+.textUnderTitle{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    flex: 0 0 60%; /* Жестко задаем ширину текста */
+    font-family: Inter;
+    font-size: 110%;
+}
+h1{
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+/*Первый абзац*/
+.container {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+.column {
+    padding: 2%;
+    margin: 1% 5% 3% 5%; /* Задайте нужное вам значение расстояния между блоками */
+    float: left; /* Чтобы блоки выстраивались в ряд по горизонтали */
+    position: relative;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 2%;
+    border-radius: 6%;
+    width: 30%;
+    height: 350px;
+    z-index: 1;
+}
+.column p {
+    font-family: Inter;
+    font-size: 110%;
+}
+.column img {
+    width: 50%;
+    height: 170px;
+}
+.centered {
+    text-align: center;
+    margin-bottom: 4%;
+}
+.number{
+    font-family: Abhaya Libre;
+    font-size: 250%;
+    font-weight: 800;
+    margin: 0;
+}
+/*Абзац с формой*/
+.left-column, .right-column {
+    flex: 1;
+    padding: 0 2%; /* Добавляем немного отступов для стилизации */
+}
+.left-column p{
+    font-family: Inter;
+    font-size: 110%;
+}
+/* Стили для формы в правой части */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для полей ввода и кнопки */
+.textAndForma{
+    margin: 7% 0;
+}
+.textAndForma p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.containerForma {
+    display: flex;
+    justify-content: center;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 0 2%; /* Добавляем немного отступов для стилизации */
+}
+
+/* Стили для формы в правой части */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для полей ввода и кнопки */
+input[type="text"],
+input[type="tel"],
+button {
+    width: 60%;
+    height: 40px;
+    padding: 1%;
+    margin-bottom: 1%;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Это свойство учитывает padding и border в общей ширине элемента */
+    margin: 1%;
+}
+
+button {
+    background-color: #D9E8E8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #F2DED7;  
+}
+h5 {
+    text-align: center;
+    font-family: Abhaya Libre;
+    letter-spacing: 1%s;
+    font-size: 150%;
+    font-weight: 800;
+    margin: 0;
+}
+@media (max) {
+    
+}

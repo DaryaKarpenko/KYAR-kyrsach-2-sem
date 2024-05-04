@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="main.css">
+    <link rel="stylesheet"  href="generalStyle.css">
+    <link rel="stylesheet"  href="catalogStyle.css">
+    <script src="scriptMain.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img class="logo" src="для сайта/logo.svg">
+            <p class="bold">FlowerHaven</p>
+            <a href="aboutUs.html">О нас</a>
+            <a href="blog.html">Блог</a>
+            <a href="MasterClasses.html">Мастер классы</a>
+            <a href="deliveryAndPayment.html">Доставка и оплата</a>
+            <a href="main.html">Главная</a>
+            <a href="main.html#section1">Каталог</a>
+
+        </nav>
+    </header>
+
+    
+<h1>Цветочные композиции</h1>
+<div>
+    <div class="gallery">
+        <div class="img">
+          <img src="для сайта/каталог/komp1.jpg" alt="Image 1">
+          <div class="caption">
+            <p>"Цветочное обилие"</p>
+            <p>Цена: 95byn</p>
+            <button class="order-btn" onclick="showOrderForm('Цветочное обилие', 'для сайта/каталог/komp1.jpg')">Заказать</button>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="для сайта/каталог/komp2.jpg" alt="Image 2">
+          <div class="caption">
+            <p>"Цветочный аромат"</p>
+            <p>Цена: 55byn</p>
+            <button class="order-btn" onclick="showOrderForm('Цветочный аромат', 'для сайта/каталог/komp2.jpg')">Заказать</button>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="для сайта/каталог/komp3.jpg" alt="Image 3">
+          <div class="caption">
+            <p>"Цветочный рай"</p>
+            <p>Цена: 85byn</p>
+            <button class="order-btn" onclick="showOrderForm('Цветочный рай', 'для сайта/каталог/komp3.jpg')">Заказать</button>
+          </div>
+        </div>
+     
+      
+      <div id="order-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeOrderForm()">&times;</span>
+          <img src="" alt="Selected bouquet" id="selected-bouquet-image">
+          <form id="order-form">
+              <p id="selected-bouquet-description"></p>
+                <!-- Поле для ввода имени -->
+                <input type="text" placeholder="Введите ваше ФИО" required>
+                <!-- Поле для ввода телефона -->
+                <input type="tel" placeholder="Введите ваш номер телефона" required>
+                <!-- Поле для ввода даты -->
+                <input type="date" placeholder="Выберите дату" required>
+                <!-- Поле для ввода времени -->
+                <input type="time" placeholder="Выберите время" required>
+                <!-- Поле для ввода комментария -->
+                <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
+                <!-- Кнопка отправки формы -->
+                <button class="buttonForma" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div>
+    <div class="gallery">
+        <div class="img">
+          <img src="для сайта/каталог/komp4.jpg" alt="Image 1">
+          <div class="caption">
+            <p>"Настроение"</p>
+            <p>Цена: 85byn</p>
+            <button class="order-btn" onclick="showOrderForm( 'Настроение','для сайта/каталог/komp4.jpg')">Заказать</button>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="для сайта/каталог/komp5.jpg" alt="Image 2">
+          <div class="caption">
+            <p>"Цветочное изобилие"</p>
+            <p>Цена: 68byn</p>
+            <button class="order-btn" onclick="showOrderForm('Цветочное изобилие', 'для сайта/каталог/komp5.jpg')">Заказать</button>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="для сайта/каталог/komp6.jpg" alt="Image 3">
+          <div class="caption">
+            <p>"Цветочный уголок"</p>
+            <p>Цена: 73byn</p>
+            <button class="order-btn" onclick="showOrderForm('Цветочный уголок', 'для сайта/каталог/komp6.jpg')">Заказать</button>
+          </div>
+        </div>
+     
+      
+      <div id="order-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeOrderForm()">&times;</span>
+          <img src="" alt="Selected bouquet" id="selected-bouquet-image">
+          <form id="order-form">
+              <p id="selected-bouquet-description"></p>
+            <!-- Поле для ввода имени -->
+            <input type="text" placeholder="Введите ваше ФИО" required>
+            <!-- Поле для ввода телефона -->
+            <input type="tel" placeholder="Введите ваш номер телефона" required>
+            <!-- Поле для ввода даты -->
+            <input type="date" placeholder="Выберите дату" required>
+            <!-- Поле для ввода времени -->
+            <input type="time" placeholder="Выберите время" required>
+            <!-- Поле для ввода комментария -->
+            <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
+            <!-- Кнопка отправки формы -->
+            <button class="buttonForma" type="submit">Отправить</button>
+      </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div>
+    <div class="gallery">
+        <div class="img">
+          <img src="для сайта/каталог/komp7.jpg" alt="Image 1">
+          <div class="caption">
+            <p>"Цветочное искушение"</p>
+            <p>Цена: 66byn</p>
+            <button class="order-btn" onclick="showOrderForm( 'Цветочное искушение','для сайта/каталог/komp7.jpg')">Заказать</button>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="для сайта/каталог/komp8.jpg" alt="Image 2">
+          <div class="caption">
+            <p>"Ботанический сад"</p>
+            <p>Цена: 75byn</p>
+            <button class="order-btn" onclick="showOrderForm('Ботанический сад', 'для сайта/каталог/komp8.jpg')">Заказать</button>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="для сайта/каталог/komp9.jpg" alt="Image 3">
+          <div class="caption">
+            <p>"Цветочный оазис"</p>
+            <p>Цена: 80byn</p>
+            <button class="order-btn" onclick="showOrderForm('Цветосный оазис', 'для сайта/каталог/komp9.jpg')">Заказать</button>
+          </div>
+        </div>
+     
+      
+      <div id="order-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeOrderForm()">&times;</span>
+          <img src="" alt="Selected bouquet" id="selected-bouquet-image">
+          <form id="order-form">
+              <p id="selected-bouquet-description"></p>
+            <!-- Поле для ввода имени -->
+            <input type="text" placeholder="Введите ваше ФИО" required>
+            <!-- Поле для ввода телефона -->
+            <input type="tel" placeholder="Введите ваш номер телефона" required>
+            <!-- Поле для ввода даты -->
+            <input type="date" placeholder="Выберите дату" required>
+            <!-- Поле для ввода времени -->
+            <input type="time" placeholder="Выберите время" required>
+            <!-- Поле для ввода комментария -->
+            <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
+            <!-- Кнопка отправки формы -->
+            <button class="buttonForma" type="submit">Отправить</button>
+      </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <footer class="background">
+        <h2 class="textPodval">Где нас найти?</h2>
+            <div class="podval">
+                <div class="left-side">
+                    <p>ул. Центральная 28, г.Минск, Беларусь</p>
+                    <div class="imagess">
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/house/Zk4YcgZlTEwDQFtpfXVwdX9hYA==/?ll=27.415905%2C53.914306&utm_medium=mapframe&utm_source=maps&z=18.89" style="color:#eee;font-size:10%;position:absolute;top:2%;">Каменногорская улица, 28 на карте Минска, ближайшее метро Каменная Горка — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=27.415905%2C53.914306&mode=whatshere&whatshere%5Bpoint%5D=27.415594%2C53.914324&whatshere%5Bzoom%5D=17&z=18.89" width="80%" height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                    <p>Режим работы с 8:00 до 23:00</p>
+                </div>
+                <div class="right-side">
+                    <h4>Наши социальные сети:</h4>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/karpenkodp/">Instagram </a>
+                        <a href="#">Telegram</a>
+                        <a href="#">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    
+</body>
+</html>

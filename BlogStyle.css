@@ -1,0 +1,100 @@
+h1{
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 1%;
+}
+h2{
+    text-align: center;
+}
+ /*первый абзац*/
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Выравнивание содержимого по вертикали */
+    margin: 2% 0 4% 3%;
+
+}
+.text {
+    flex: 0 0 60%; /* Жестко задаем ширину текста */
+    margin-right: 7%; /* Расстояние между текстом и изображением */
+    margin-left: 4%;
+}
+.text p  {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: Inter;
+    font-size: 120%;
+    text-align: left;
+}
+
+ .containerTwo p, .containerFactsLeft p  {
+    margin-top: 3%;
+    margin-bottom: 3%px;
+    font-family: Inter;
+    font-size: 120%;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 18%;
+    height: 500px;
+    margin-left: 3%;
+}
+ /*второй абзац*/
+.containerTwo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Выравнивание содержимого по вертикали */
+    background-color: #F2DED7;
+    border: solid 1px black;
+
+}
+.textTwo {
+    flex: 0 0 60%; /* Жестко задаем ширину текста */
+    margin-right: 4%; /* Расстояние между текстом и изображением */
+    margin-left: 5%;
+}
+.imageTwo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 4%;
+    width: 18%;
+    height: 510px;
+}
+.background {
+    background-color: #F2DED7;
+    border: solid 1px black;
+}
+.imageFacts {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 17%;
+    height: 410px;
+    margin-left: 4%;
+}
+.containerFactsLeft {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 2% 3% 3%;
+    align-items: center; /* Выравнивание содержимого по вертикали */
+
+}
+.imageLeft {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 5%;
+    width: 17%;
+    height: 410px;
+}
+.textPodval {
+    margin-top: 3%;
+}

@@ -1,0 +1,115 @@
+body{
+    background-color: #F8F3EF;
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+/*Header*/
+.nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px black;
+    z-index: 10000;
+    background-color: #F2DED7;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #71624D;
+    top:0;
+    margin: 1%;
+    float: right;
+    font-family: Inter;
+    font-size: 110%;
+}
+.nav p{
+    float: left;
+    padding-left: 1%;
+    font-family: Inter;
+    font-size: 127%;
+    font-weight: 600;
+}
+.logo{
+    position: relative;
+    margin: 0;
+    width: 3%;
+    float: left;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+/*подвал*/
+.podval {
+    display: flex;
+    justify-content: space-between;
+}
+.left-side p, .right-side a{
+    font-family: Inter;
+    font-size: 110%;
+}
+ h2 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+h1, h2, h3 {
+    text-align: center;
+    font-family: Abhaya Libre;
+    letter-spacing: 6px;
+    font-size: 250%;
+    font-weight: 800;
+}
+h4{
+    font-family: Abhaya Libre;
+    letter-spacing: 1%;
+    font-size: 170%;
+    font-weight: 800; 
+}
+
+.left-side {
+    flex:1;
+    text-align: center;
+    width: 45%;
+}
+.imagess {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.right-side {
+    flex: 1;
+    margin-top: 3%;
+    border-radius: 1%;
+    width: 45%;
+}
+.social-media  {
+    border-radius: 1%;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+h4{
+    margin-right: 3%;
+}
+h4, .social-media a{
+    text-align: center;
+}
+.social-media a {
+    display: block;
+    margin: 3% 2% 3% 0;
+    padding: 1%;
+    border-radius: 25px; /* Закругляем углы */
+    background-color: #D9E8E8; /* Серый цвет фона */
+    width: 65%;
+    height: 30px;
+}
+.bold {
+    font-weight: 800; /* полужирный текст  */
+    font-size: 118%;
+    font-family: Inter;
+}
+.background {
+    background-color: #F2DED7;
+    border: solid 1px black;
+    margin-bottom: 2%;
+}
+

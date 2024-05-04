@@ -1,0 +1,95 @@
+.textUnderTitle{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    flex: 0 0 60%; /* Жестко задаем ширину текста */
+    font-family: Inter;
+    font-size: 110%;
+}
+h1{
+    margin-top: 5%;
+    margin-bottom: 1%;
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    margin-left: 2%;
+    align-items: center; /* Выравнивание содержимого по вертикали */
+
+}
+.text {
+    flex: 0 0 65%; /* Жестко задаем ширину текста */
+    margin-right: 5%; /* Расстояние между текстом и изображением */
+    margin-left: 3%;
+}
+.text p  {
+    margin-top: 3%;
+    margin-bottom: 4%;
+    font-family: Inter;
+    font-size: 125%;
+    text-align: left;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 18%;
+}
+.adviceBackground {
+    background-color: #F2DED7;
+    border: solid 1px black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Стили для формы */
+.forma {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    width: 20%;
+    margin: 1% 0 2% 38%;
+}
+
+/* Стили для полей ввода */
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    height: 30px;
+    padding: 2%;
+    margin-bottom: 2%;
+    border: 1px solid #ccc;
+}
+
+/* Стили для кнопки отправки */
+button {
+    width: 100%;
+    height: 30px;
+    padding: 1%;
+    background-color: #D9E8E8;
+    color: #fff;
+    border: none;
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+/* Полупрозрачный текст в полях ввода */
+input::placeholder,
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Цвет текста полупрозрачного текста */
+}
+button:hover {
+    background-color: #F2DED7;
+}
+button{
+margin-left: 3%;
+}
+

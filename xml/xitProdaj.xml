@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="gallery">
+      <imagine>
+        <src>для сайта/хит продаж/1.jpg</src>
+        <div>
+          <title>Букет "Мечта"</title>
+          <price>Цена: 50byn</price>
+        </div>
+
+      <imagine>
+        <src>для сайта/хит продаж/2.jpg" </src>
+        <div>
+          <title>Букет "Эстетика"</title>
+          <price>Цена: 55byn</price>
+      </div>  
+
+      <imagine>
+        <src>для сайта/хит продаж/3.jpg</src>
+        <div>
+          <title>Букет "Красота"</title>
+          <price>Цена: 60byn</price>
+       </div>
+
+<div class="gallery">
+  <imagine>
+    <src>для сайта/хит продаж/4.jpg </src>
+    <div>
+      <title>Букет "Весна"</title>
+      <price>Цена: 66byn</price>
+   </div>
+
+  <imagine>
+    <src>для сайта/хит продаж/5.jpg </src>
+    <div>
+      <title>Букет "Счастье"</title>
+      <price>Цена: 70byn</price>
+   </div>
+
+  <imagine>
+    <img>для сайта/хит продаж/6.jpg </img>
+    <div>
+      <title>Букет "Лучик"</title>
+      <price>Цена: 75byn</price>
+    </div>
+
+<div class="gallery">
+  <imagine>
+    <src>для сайта/хит продаж/7.jpg </src>
+    <div>
+      <title>Букет "Солнышко"</title>
+      <price>Цена: 45byn</price>
+  </div>
+
+  <imagine>
+    <src>для сайта/хит продаж/8.jpg </src>
+    <div>
+      <title>Букет "Красота"</title>
+      <price>Цена: 64byn</price>
+  </div>
+
+  <imagine>
+    <src>для сайта/хит продаж/9.jpg </src>
+    <div>
+      <title>Букет "Мелодия"</title>
+      <price>Цена: 59byn</price>
+    </div>
+
+</cataloge>
