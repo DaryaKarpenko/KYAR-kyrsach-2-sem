@@ -7,29 +7,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="BlogStyle.css">
     <link rel="stylesheet"  href="generalStyle.css">
-    
 </head>
 <body>
     <header>
         <nav class="nav">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">&#8801;</label>
             <img class="logo" src="для сайта/logo.svg">
             <p>FlowerHaven</p>
-            <a href="aboutUs.html">О нас</a>
-            <a href="MasterClasses.html">Мастер классы</a>
-            <a href="deliveryAndPayment.html">Доставка и оплата</a>
-            <a href="main.html">Главная</a>
-            <a href="main.html#section1">Каталог</a>
-
+            <div class="menuBox" id="menuBox"> 
+                <ul>
+                    <li><a class="menuItem" href="main.html">Главная</a></li>
+                    <li><a class="menuItem" href="main.html#section1">Каталог</a></li>
+                    <li><a class="menuItem" href="MasterClasses.html">Мастер классы</a></li>
+                    <li><a class="menuItem" href="deliveryAndPayment.html">Доставка и оплата</a></li> 
+                    <li><a class="menuItem" href="aboutUs.html">О нас</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 <h1>Блог</h1>
 
-<div class="container">
-
+<h2>Советы по уходу за цветами:</h2>
+<div class="containerOne">
+    <img src="для сайта/blogFirst.jpg" alt="Изображение 1" class="image">
     <div class="text">
-        <h2>Советы по уходу за цветами:</h2>
         <p><span class="bold">1. Выбор правильной вазы:</span> Используйте чистую вазу, которая идеально подходит для конкретного типа цветов. Например, для цветов
              с тонкими стеблями лучше использовать узкие вазы, а для цветов с мощными стеблями - более широкие и устойчивые вазы.
         </p>
@@ -52,18 +57,15 @@
            <span class="bold">6. Продлить жизнь цветов:</span>  Если цветы начали увяхать, попробуйте обрезать их стебли под углом и поместить в теплую воду на несколько 
             часов. Иногда это может помочь вернуть им свежесть.
         </p>
-        </div>
-    
-        <img src="для сайта/blogFirst.jpg" alt="Изображение 1" class="image">
-
+    </div>
 </div>
 
-<div class="containerTwo">
+<div class="containerTwos">
+    <h2>Как выбрать идеальный букет?</h2>
 
-    <img src="для сайта/blogTwo.jpg" alt="Изображение 1" class="imageTwo">
+    <img src="для сайта/blogTwo.jpg" alt="Изображение 1" class="imageTwos">
     <div class="textTwo">
 
-        <h2>Как выбрать идеальный букет?</h2>
         <p><span class="bold">1. Учитывайте предпочтения получателя: </span> Попытайтесь узнать о цветовых предпочтениях и любимых видов цветов получателя. Некоторые
              люди предпочитают яркие и насыщенные цветы, другие - нежные и легкие оттенки. Узнайте также, есть ли у них аллергии на определенные растения.
         </p>
@@ -85,7 +87,8 @@
         </p>
 
      </div>
-    
+     <img src="для сайта/blogTwo.jpg" alt="Изображение 1" class="imageTwoss">
+
 </div>
 <h2>Немного интересных фактов </h2>
 
@@ -103,7 +106,6 @@
             А мирное свержение военной диктатуры в Португалии даже получило название «Революции Гвоздик». В этот день граждане вышли на улицы с гвоздиками в руках, а 
             солдаты воткнули алые венчики в дула своих винтовок.
         </p>    
-
         </div>
     
         <img src="для сайта/interestingFactOne.jpg" alt="Изображение 1" class="imageFacts">
@@ -176,4 +178,5 @@
         </div>
     </footer>
 </body>
+<script src="aboutUs.js"></script>
 </html>

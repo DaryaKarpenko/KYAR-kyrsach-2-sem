@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     let array = [];
-    fetch('odnot.xml')
+    fetch('catalogByket.xml')
         .then(function (response) {
             return response.text();
         })
@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     <div class="caption">
                         <p>${array[i].title}</p>
                         <p>${array[i].price}</p>
-                        <button class="order-btn" onclick="showOrderForm( '${array[i].scr}')">Заказать</button>
+                        <button class="order-btn" onclick="showOrderForm('${array[i].scr}')">Заказать</button>
                     </div>
                 </div>
             
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     <div class="caption">
                         <p>${array[i + 1].title}</p>
                         <p>${array[i + 1].price}</p>
-                        <button class="order-btn" onclick="showOrderForm( '${array[i + 1].scr}')">Заказать</button>
+                        <button class="order-btn" onclick="showOrderForm('${array[i + 1].scr}')">Заказать</button>
                     </div>
                 </div>
             
@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     <div class="caption">
                         <p>${array[i + 2].title}</p>
                         <p>${array[i + 2].price}</p>
-                        <button class="order-btn" onclick="showOrderForm( '${array[i + 2].scr}')">Заказать</button>
+                        <button class="order-btn" onclick="showOrderForm('${array[i + 2].scr}')">Заказать</button>
                     </div>
                 </div>
                 
@@ -58,7 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
                     <form id="order-form">
                         <p id="selected-bouquet-description"></p>
                             <input type="text" placeholder="Введите ваше ФИО" required>
-                            <input type="number" min="1" placeholder="Выберите количество" required>
                             <input type="tel" placeholder="Введите ваш номер телефона" required>
                             <input type="date" placeholder="Выберите дату" required>
                             <input type="time" placeholder="Выберите время" required>

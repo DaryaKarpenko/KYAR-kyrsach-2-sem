@@ -9,18 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link rel="stylesheet"  href="generalStyle.css">
     <link rel="stylesheet"  href="deliveryAndPaymentStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <header>
         <nav class="nav">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">&#8801;</label>
             <img class="logo" src="для сайта/logo.svg">
             <p>FlowerHaven</p>
-            <a href="aboutUs.html">О нас</a>
-            <a href="blog.html">Блог</a>
-            <a href="MasterClasses.html">Мастер классы</a>
-            <a href="main.html">Главная</a>
-            <a href="main.html#section1">Каталог</a>
-
+            <div class="menuBox" id="menuBox"> 
+                <ul>
+                    <li><a class="menuItem" href="main.html">Главная</a></li>
+                    <li><a class="menuItem" href="main.html#section1">Каталог</a></li>
+                    <li><a class="menuItem" href="MasterClasses.html">Мастер классы</a></li>
+                    <li><a class="menuItem" href="blog.html">Блог</a></li> 
+                    <li><a class="menuItem" href="aboutUs.html">О нас</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 <h1>Доставка и оплата</h1>
@@ -42,14 +49,14 @@
     </div>
     <div class="column">
             <img src="для сайта/phoneForPayment.svg" alt="Изображение 2" class="imageForPayment">
-            <h5>Уточнение деталей</h5>
-            <p>Менеджер звонит вам и уточняет детали</p>
+            <h5 >Уточнение деталей</h5>
+            <p class="otstyp">Менеджер звонит вам и уточняет детали</p>
             <h6 class="number">2</h6>
     </div>
     <div class="column">
             <img src="для сайта/flowerForPayment.svg" alt="Изображение 3" class="imageForPayment">
-            <h5>Получение букета</h5>
-            <p>Вы получаете букет и радуете близких</p>
+            <h5 >Получение букета</h5>
+            <p class="otstyp">Вы получаете букет и радуете близких</p>
             <h6 class="number">3</h6>
     </div>
 </div>
@@ -83,7 +90,7 @@
             <div class="left-side">
                 <p>ул. Центральная 28, г.Минск, Беларусь</p>
                 <div class="imagess">
-                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/house/Zk4YcgZlTEwDQFtpfXVwdX9hYA==/?ll=27.415905%2C53.914306&utm_medium=mapframe&utm_source=maps&z=18.89" style="color:#eee;font-size:10%;position:absolute;top:2%;">Каменногорская улица, 28 на карте Минска, ближайшее метро Каменная Горка — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=27.415905%2C53.914306&mode=whatshere&whatshere%5Bpoint%5D=27.415594%2C53.914324&whatshere%5Bzoom%5D=17&z=18.89" width="80%" height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:10px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/house/Zk4YcgZlTEwDQFtpfXVwdX9hYA==/?ll=27.415905%2C53.914306&utm_medium=mapframe&utm_source=maps&z=18.89" style="color:#eee;font-size:10%;position:absolute;top:2%;">Каменногорская улица, 28 на карте Минска, ближайшее метро Каменная Горка — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=27.415905%2C53.914306&mode=whatshere&whatshere%5Bpoint%5D=27.415594%2C53.914324&whatshere%5Bzoom%5D=17&z=18.89" width="80%" height="350" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 </div>
                 <p>Режим работы с 8:00 до 23:00</p>
             </div>
@@ -98,4 +105,5 @@
         </div>
 </footer>
 </body>
+<script src="aboutUs.js"></script>
 </html>

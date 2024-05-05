@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div class="gallery">
+<gallery>
       <imagine>
         <src>для сайта/каталог/odnot1.jpg</src>
         <div>
-          <title>Букет "Мечта"</title>
-          <price>Цена: 50byn</price>
+          <title>Пионы</title>
+          <price>3 byn/шт</price>
         </div>
 
       <imagine>
-        <src>для сайта/хит продаж/2.jpg </src>
+        <src>для сайта/каталог/odnot2.jpg</src>
         <div>
-          <title>Букет "Эстетика"</title>
-          <price>Цена: 55byn</price>
+          <title>Гипсофила</title>
+          <price>5 byn/шт</price>
       </div>  
 
       <imagine>
-        <src>для сайта/хит продаж/3.jpg</src>
+        <src>для сайта/каталог/odnot3.jpg</src>
         <div>
-          <title>Букет "Красота"</title>
-          <price>Цена: 60byn</price>
+          <title>Лилия</title>
+          <price>8 byn/шт</price>
        </div>
 
-<div class="gallery">
+<gallery>
   <imagine>
-    <src>для сайта/хит продаж/4.jpg </src>
+    <src>для сайта/каталог/odnot4.jpg</src>
     <div>
-      <title>Букет "Весна"</title>
-      <price>Цена: 66byn</price>
+      <title>Георгинг</title>
+      <price>4 byn/шт</price>
    </div>
 
   <imagine>
-    <src>для сайта/хит продаж/5.jpg </src>
+    <src>для сайта/каталог/odnot5.jpg</src>
     <div>
-      <title>Букет "Счастье"</title>
-      <price>Цена: 70byn</price>
+      <title>Эустома</title>
+      <price>3,5 byn/шт</price>
    </div>
 
   <imagine>
-    <img>для сайта/хит продаж/6.jpg </img>
+    <img>для сайта/каталог/odnot6.jpg</img>
     <div>
-      <title>Букет "Лучик"</title>
-      <price>Цена: 75byn</price>
+      <title>Ромашки</title>
+      <price>3 byn/шт</price>
     </div>
 
-<div class="gallery">
+<gallery>
   <imagine>
-    <src>для сайта/хит продаж/7.jpg </src>
+    <src>для сайта/каталог/odnot7.jpg</src>
     <div>
-      <title>Букет "Солнышко"</title>
-      <price>Цена: 45byn</price>
+      <title>Альстомерий</title>
+      <price>5 byn/шт</price>
   </div>
 
   <imagine>
-    <src>для сайта/хит продаж/8.jpg </src>
+    <src>для сайта/каталог/odnot8.jpg</src>
     <div>
-      <title>Букет "Красота"</title>
-      <price>Цена: 64byn</price>
+      <title>Тульпаны</title>
+      <price>3,5 byn/шт</price>
   </div>
 
   <imagine>
-    <src>для сайта/хит продаж/9.jpg </src>
+    <src>для сайта/каталог/odnot9.jpg</src>
     <div>
-      <title>Букет "Мелодия"</title>
-      <price>Цена: 59byn</price>
+      <title>Кустовая роза</title>
+      <price>3 byn/шт</price>
     </div>
 
 </cataloge>

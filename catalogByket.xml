@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="gallery">
+      <imagine>
+        <src>для сайта/каталог/byket1.jpg</src>
+        <div>
+          <title>Букет "Аромат"</title>
+          <price>Цена: 55 byn</price>
+        </div>
+
+      <imagine>
+        <src>для сайта/каталог/byket2.jpg </src>
+        <div>
+          <title>Букет "Поле цветов"</title>
+          <price>Цена: 65 byn</price>
+      </div>  
+
+      <imagine>
+        <src>для сайта/каталог/byket3.jpg</src>
+        <div>
+          <title>Букет "Мгновение"</title>
+          <price>Цена: 50 byn</price>
+       </div>
+
+<div class="gallery">
+  <imagine>
+    <src>для сайта/каталог/byket4.jpg</src>
+    <div>
+      <title>Букет "Мелодия"</title>
+      <price>Цена: 70 byn</price>
+   </div>
+
+  <imagine>
+    <src>для сайта/каталог/byket5.jpg</src>
+    <div>
+      <title>Букет "Гармония"</title>
+      <price>Цена: 60 byn</price>
+   </div>
+
+  <imagine>
+    <img>для сайта/каталог/byket6.jpg</img>
+    <div>
+      <title>Букет "Мечта"</title>
+      <price>Цена: 55 byn</price>
+    </div>
+
+<div class="gallery">
+  <imagine>
+    <src>для сайта/каталог/byket7.jpg</src>
+    <div>
+      <title>Букет "Краски"</title>
+      <price>Цена: 45 byn</price>
+  </div>
+
+  <imagine>
+    <src>для сайта/каталог/byket8.jpg</src>
+    <div>
+      <title>Букет "Счастье"</title>
+      <price>Цена: 55 byn</price>
+  </div>
+
+  <imagine>
+    <src>для сайта/каталог/byket9.jpg</src>
+    <div>
+      <title>Букет "Летнее чудо"</title>
+      <price>Цена: 50 byn</price>
+    </div>
+
+</cataloge>

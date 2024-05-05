@@ -22,7 +22,7 @@ body{
     justify-content: space-between;
     flex-basis:100%;
 }
-.menuBox{
+.nmenuBox{
     display:flex;
     gap:5px;
 }
@@ -42,6 +42,7 @@ body{
 .nav ul {
     margin-left: auto; /* Перемещение меню вправо */
     list-style: none;
+    padding: 0;
     display: flex;
 }
 a{
@@ -49,8 +50,8 @@ a{
     color:black;
 }
 .menuBox {
-    text-align: right; 
-    margin-left: 52%;
+    margin-right: 55%;
+    text-align: right; /* если нужно выровнять по правому краю */
 }
 
 .menuBox li{
@@ -305,19 +306,11 @@ h1{
       width: 70%; /* Устанавливаем ширину изображений на 100% */
       height: 280px;
     }
-    .nav ul {
-       padding-left: 7px;
-
-    }
   
     .slider p {
       text-align: center; /* Центрируем текст */
       font-size: 13px;
       margin-left: 55px;
-    }
-    .menuBox{
-        margin-left: 0;
-        margin-right: 0;
     }
     .previous{
         margin-top: 50px;
@@ -537,10 +530,11 @@ h1{
         white-space: nowrap;
     }
     .social-media a{
-        width: 110% ;
-        margin-left: 10%;
+        width: 100px ;
+
     }
     .imagess{
+        width: 100%;
         display: block;
     }
 

@@ -92,4 +92,92 @@ button:hover {
 button{
 margin-left: 3%;
 }
+@media screen and (max-width: 744px) {
+    h1{
+        margin-top: 15%;
+        font-size: 23px;
+    }
+    .textUnderTitle{
+        font-size: 13px;
+    }
+    .adviceBackground h2 {
+        font-size: 20px;
+    }
+    .text{
+        flex:1;
+    }
+    .text p{
+        font-size: 13px;
+    }
+    .image {
+        width: 30%;
+    }
+    .forma h2 {
+        font-size: 20px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+        width: 120%;
+        height: 20px;
 
+    }
+    /* Полупрозрачный текст в полях ввода */
+input::placeholder,
+textarea::placeholder {
+font-size: 10px;
+}
+button{
+    margin-left: 15%;
+}
+.menuBox{
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 10%;
+}
+
+
+}
+@media screen and (max-width: 375px) {
+    body{
+        width: 120%;
+    }
+    h1{
+        margin-top: 20%;
+    }
+    .text{
+        flex:1;
+    }
+    .text p{
+        font-size: 10px;
+    }
+    .image {
+        width: 35%;
+    }
+    form{
+        margin: 1% 3% 2% 34%;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+        width: 180%;
+        height: 15px;
+    }
+    input::placeholder,
+    textarea::placeholder {
+    font-size: 9px;
+    }
+    button{
+        margin-left: 40%;
+        height: 20px;
+    }
+    iframe{
+        height: 300px;
+        width: 300px;
+    }
+
+}

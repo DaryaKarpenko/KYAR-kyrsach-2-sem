@@ -9,187 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link rel="stylesheet"  href="main.css">
     <link rel="stylesheet"  href="generalStyle.css">
-    <link rel="stylesheet"  href="catalogStyle.css">
-
 
 </head>
 <body>
     <header>
         <nav class="nav">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">&#8801;</label>
             <img class="logo" src="для сайта/logo.svg">
-            <p class="bold">FlowerHaven</p>
-            <a href="aboutUs.html">О нас</a>
-            <a href="blog.html">Блог</a>
-            <a href="MasterClasses.html">Мастер классы</a>
-            <a href="deliveryAndPayment.html">Доставка и оплата</a>
-            <a href="main.html">Главная</a>
-            <a href="main.html#section1">Каталог</a>
-
+            <p>FlowerHaven</p>
+            <div class="menuBox" id="menuBox"> 
+               <ul>
+                <li><a class="menuItem" href="main.html">Главная</a></li>
+                <li><a class="menuItem" href="MasterClasses.html">Мастер классы</a></li>
+                <li><a class="menuItem" href="deliveryAndPayment.html">Доставка и оплата</a></li>
+                <li><a class="menuItem" href="blog.html">Блог</a></li> 
+                <li><a class="menuItem" href="aboutUs.html">О нас</a></li>
+               </ul>
+            </div>
         </nav>
     </header>
 
     <h1> Хит продаж</h1>
-
     <div class="galeryContainer">
-        <div class="gallery">
-            <div class="img">
-              <img src="для сайта/хит продаж/1.jpg" alt="Image 1">
-              <div class="caption">
-                <p>Букет "Мечта"</p>
-                <p>Цена: 50byn</p>
-                <button class="order-btn" onclick="showOrderForm('Мечта', 'для сайта/хит продаж/1.jpg' )">Заказать</button>
-              </div>
-            </div>
-    
-            <div class="img">
-              <img src="для сайта/хит продаж/2.jpg" alt="Image 2">
-              <div class="caption">
-                <p>Букет "Эстетика"</p>
-                <p>Цена: 55byn</p>
-                <button class="order-btn" onclick="showOrderForm('Эстетика', 'для сайта/хит продаж/2.jpg')">Заказать</button>
-              </div>
-            </div>
-    
-            <div class="img">
-              <img src="для сайта/хит продаж/3.jpg" alt="Image 3">
-              <div class="caption">
-                <p>Букет "Красота"</p>
-                <p>Цена: 60byn</p>
-                <button class="order-btn" onclick="showOrderForm('Красота', 'для сайта/хит продаж/3.jpg')">Заказать</button>
-              </div>
-            </div>
-         
-          
-          <div id="order-modal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeOrderForm()">&times;</span>
-              <img src="" alt="Selected bouquet" id="selected-bouquet-image">
-              <form id="order-form">
-                <p id="selected-bouquet-description"></p>
-                <!-- Поле для ввода имени -->
-                <input type="text" placeholder="Введите ваше ФИО" required>
-                <!-- Поле для ввода телефона -->
-                <input type="tel" placeholder="Введите ваш номер телефона" required>
-                <!-- Поле для ввода даты -->
-                <input type="date" placeholder="Выберите дату" required>
-                <!-- Поле для ввода времени -->
-                <input type="time" placeholder="Выберите время" required>
-                <!-- Поле для ввода комментария -->
-                <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
-                <!-- Кнопка отправки формы -->
-                <button class="buttonForma" type="submit">Отправить</button>
-          </form>
-            </div>
-          </div>
-        </div>
     </div>
-    <div>
-        <div class="gallery">
-            <div class="img">
-              <img src="для сайта/хит продаж/4.jpg" alt="Image 1">
-              <div class="caption">
-                <p>Букет "Весна"</p>
-                <p>Цена: 66byn</p>
-                <button class="order-btn" onclick="showOrderForm('Весна', 'для сайта/хит продаж/4.jpg')">Заказать</button>
-              </div>
-            </div>
-    
-            <div class="img">
-              <img src="для сайта/хит продаж/5.jpg" alt="Image 2">
-              <div class="caption">
-                <p>Букет "Счастье"</p>
-                <p>Цена: 70byn</p>
-                <button class="order-btn" onclick="showOrderForm('Счастье', 'для сайта/хит продаж/5.jpg')">Заказать</button>
-              </div>
-            </div>
-    
-            <div class="img">
-              <img src="для сайта/хит продаж/6.jpg" alt="Image 3">
-              <div class="caption">
-                <p>Букет "Лучик"</p>
-                <p>Цена: 75byn</p>
-                <button class="order-btn" onclick="showOrderForm('Лучик', 'для сайта/хит продаж/6.jpg')">Заказать</button>
-              </div>
-            </div>
-         
-          
-          <div id="order-modal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeOrderForm()">&times;</span>
-              <img src="" alt="Selected bouquet" id="selected-bouquet-image">
-              <form id="order-form">
-                  <p id="selected-bouquet-description"></p>
-                    <!-- Поле для ввода имени -->
-                    <input type="text" placeholder="Введите ваше ФИО" required>
-                    <!-- Поле для ввода телефона -->
-                    <input type="tel" placeholder="Введите ваш номер телефона" required>
-                    <!-- Поле для ввода даты -->
-                    <input type="date" placeholder="Выберите дату" required>
-                    <!-- Поле для ввода времени -->
-                    <input type="time" placeholder="Выберите время" required>
-                    <!-- Поле для ввода комментария -->
-                    <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
-                    <!-- Кнопка отправки формы -->
-                    <button class="buttonForma" type="submit">Отправить</button>
-              </form>
-            </div>
-          </div>
-        </div>
-    </div>
-    
-    <div>
-        <div class="gallery">
-            <div class="img">
-              <img src="для сайта/хит продаж/7.jpg" alt="Image 1">
-              <div class="caption">
-                <p>Букет "Солнышко"</p>
-                <p>Цена: 45byn</p>
-                <button class="order-btn" onclick="showOrderForm( 'Солнышко','для сайта/хит продаж/7.jpg')">Заказать</button>
-              </div>
-            </div>
-    
-            <div class="img">
-              <img src="для сайта/хит продаж/8.jpg" alt="Image 2">
-              <div class="caption">
-                <p>Букет "Красота"</p>
-                <p>Цена: 64byn</p>
-                <button class="order-btn" onclick="showOrderForm('Красота', 'для сайта/хит продаж/8.jpg')">Заказать</button>
-              </div>
-            </div>
-    
-            <div class="img">
-              <img src="для сайта/хит продаж/9.jpg" alt="Image 3">
-              <div class="caption">
-                <p>Букет "Мелодия"</p>
-                <p>Цена: 59byn</p>
-                <button class="order-btn" onclick="showOrderForm('Мелодия', 'для сайта/хит продаж/9.jpg')">Заказать</button>
-              </div>
-            </div>
-         
-          
-          <div id="order-modal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeOrderForm()">&times;</span>
-              <img src="" alt="Selected bouquet" id="selected-bouquet-image">
-              <form id="order-form">
-                  <p id="selected-bouquet-description"></p>
-                <!-- Поле для ввода имени -->
-                <input type="text" placeholder="Введите ваше ФИО" required>
-                <!-- Поле для ввода телефона -->
-                <input type="tel" placeholder="Введите ваш номер телефона" required>
-                <!-- Поле для ввода даты -->
-                <input type="date" placeholder="Выберите дату" required>
-                <!-- Поле для ввода времени -->
-                <input type="time" placeholder="Выберите время" required>
-                <!-- Поле для ввода комментария -->
-                <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
-                <!-- Кнопка отправки формы -->
-                <button class="buttonForma" type="submit">Отправить</button>
-          </form>
-            </div>
-          </div>
-        </div>
-    </div>
+
 <footer class="background">
     <h2 class="textPodval">Где нас найти?</h2>
         <div class="podval">
@@ -211,4 +55,7 @@
         </div>
 </footer>
 </body>
+<script src="scriptMain.js"></script>
+<script src="forXitProdaj.js"></script>
+<script src="aboutUs.js"></script>
 </html>

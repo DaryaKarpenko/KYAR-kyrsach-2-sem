@@ -18,22 +18,26 @@
 <body>
   <header>
     <nav class="nav">
-      <img class="logo" src="для сайта/logo.svg">
-      <p class="bold">FlowerHaven</p>
-      <a href="aboutUs.html">О нас</a>
-      <a href="blog.html">Блог</a>
-      <a href="MasterClasses.html">Мастер классы</a>
-      <a href="deliveryAndPayment.html">Доставка и оплата</a>
-      <a href="main.html">Главная</a>
-      <a href="main.html#section1">Каталог</a>
+        <input id="menu__toggle" type="checkbox">
+        <label class="menu__btn" for="menu__toggle">&#8801;</label>
+        <img class="logo" src="для сайта/logo.svg">
+        <p>FlowerHaven</p>
+        <div class="menuBox" id="menuBox"> 
+           <ul>
+            <li><a class="menuItem" href="main.html">Главная</a></li>
+            <li><a class="menuItem" href="MasterClasses.html">Мастер классы</a></li>
+            <li><a class="menuItem" href="deliveryAndPayment.html">Доставка и оплата</a></li>
+            <li><a class="menuItem" href="blog.html">Блог</a></li> 
+            <li><a class="menuItem" href="aboutUs.html">О нас</a></li>
+           </ul>
+        </div>
     </nav>
-  </header>
+</header>
 
   <h1>Однотипные букеты</h1>
   <div class="galeryContainer">
-
   </div>
-
+  
   <footer class="background">
     <h2 class="textPodval">Где нас найти?</h2>
     <div class="podval">
@@ -64,4 +68,5 @@
 </body>
 <script src="scriptMain.js"></script>
 <script src="forOdnot.js"></script>
+<script src="aboutUs.js"></script>
 </html>

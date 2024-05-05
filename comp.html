@@ -10,186 +10,29 @@
     <link rel="stylesheet"  href="main.css">
     <link rel="stylesheet"  href="generalStyle.css">
     <link rel="stylesheet"  href="catalogStyle.css">
-    <script src="scriptMain.js"></script>
 </head>
 <body>
     <header>
         <nav class="nav">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">&#8801;</label>
             <img class="logo" src="для сайта/logo.svg">
-            <p class="bold">FlowerHaven</p>
-            <a href="aboutUs.html">О нас</a>
-            <a href="blog.html">Блог</a>
-            <a href="MasterClasses.html">Мастер классы</a>
-            <a href="deliveryAndPayment.html">Доставка и оплата</a>
-            <a href="main.html">Главная</a>
-            <a href="main.html#section1">Каталог</a>
-
+            <p>FlowerHaven</p>
+            <div class="menuBox" id="menuBox"> 
+               <ul>
+                <li><a class="menuItem" href="main.html">Главная</a></li>
+                <li><a class="menuItem" href="MasterClasses.html">Мастер классы</a></li>
+                <li><a class="menuItem" href="deliveryAndPayment.html">Доставка и оплата</a></li>
+                <li><a class="menuItem" href="blog.html">Блог</a></li> 
+                <li><a class="menuItem" href="aboutUs.html">О нас</a></li>
+               </ul>
+            </div>
         </nav>
     </header>
 
     
 <h1>Цветочные композиции</h1>
-<div>
-    <div class="gallery">
-        <div class="img">
-          <img src="для сайта/каталог/komp1.jpg" alt="Image 1">
-          <div class="caption">
-            <p>"Цветочное обилие"</p>
-            <p>Цена: 95byn</p>
-            <button class="order-btn" onclick="showOrderForm('Цветочное обилие', 'для сайта/каталог/komp1.jpg')">Заказать</button>
-          </div>
-        </div>
-
-        <div class="img">
-          <img src="для сайта/каталог/komp2.jpg" alt="Image 2">
-          <div class="caption">
-            <p>"Цветочный аромат"</p>
-            <p>Цена: 55byn</p>
-            <button class="order-btn" onclick="showOrderForm('Цветочный аромат', 'для сайта/каталог/komp2.jpg')">Заказать</button>
-          </div>
-        </div>
-
-        <div class="img">
-          <img src="для сайта/каталог/komp3.jpg" alt="Image 3">
-          <div class="caption">
-            <p>"Цветочный рай"</p>
-            <p>Цена: 85byn</p>
-            <button class="order-btn" onclick="showOrderForm('Цветочный рай', 'для сайта/каталог/komp3.jpg')">Заказать</button>
-          </div>
-        </div>
-     
-      
-      <div id="order-modal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeOrderForm()">&times;</span>
-          <img src="" alt="Selected bouquet" id="selected-bouquet-image">
-          <form id="order-form">
-              <p id="selected-bouquet-description"></p>
-                <!-- Поле для ввода имени -->
-                <input type="text" placeholder="Введите ваше ФИО" required>
-                <!-- Поле для ввода телефона -->
-                <input type="tel" placeholder="Введите ваш номер телефона" required>
-                <!-- Поле для ввода даты -->
-                <input type="date" placeholder="Выберите дату" required>
-                <!-- Поле для ввода времени -->
-                <input type="time" placeholder="Выберите время" required>
-                <!-- Поле для ввода комментария -->
-                <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
-                <!-- Кнопка отправки формы -->
-                <button class="buttonForma" type="submit">Отправить</button>
-          </form>
-        </div>
-      </div>
-    </div>
-</div>
-
-<div>
-    <div class="gallery">
-        <div class="img">
-          <img src="для сайта/каталог/komp4.jpg" alt="Image 1">
-          <div class="caption">
-            <p>"Настроение"</p>
-            <p>Цена: 85byn</p>
-            <button class="order-btn" onclick="showOrderForm( 'Настроение','для сайта/каталог/komp4.jpg')">Заказать</button>
-          </div>
-        </div>
-
-        <div class="img">
-          <img src="для сайта/каталог/komp5.jpg" alt="Image 2">
-          <div class="caption">
-            <p>"Цветочное изобилие"</p>
-            <p>Цена: 68byn</p>
-            <button class="order-btn" onclick="showOrderForm('Цветочное изобилие', 'для сайта/каталог/komp5.jpg')">Заказать</button>
-          </div>
-        </div>
-
-        <div class="img">
-          <img src="для сайта/каталог/komp6.jpg" alt="Image 3">
-          <div class="caption">
-            <p>"Цветочный уголок"</p>
-            <p>Цена: 73byn</p>
-            <button class="order-btn" onclick="showOrderForm('Цветочный уголок', 'для сайта/каталог/komp6.jpg')">Заказать</button>
-          </div>
-        </div>
-     
-      
-      <div id="order-modal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeOrderForm()">&times;</span>
-          <img src="" alt="Selected bouquet" id="selected-bouquet-image">
-          <form id="order-form">
-              <p id="selected-bouquet-description"></p>
-            <!-- Поле для ввода имени -->
-            <input type="text" placeholder="Введите ваше ФИО" required>
-            <!-- Поле для ввода телефона -->
-            <input type="tel" placeholder="Введите ваш номер телефона" required>
-            <!-- Поле для ввода даты -->
-            <input type="date" placeholder="Выберите дату" required>
-            <!-- Поле для ввода времени -->
-            <input type="time" placeholder="Выберите время" required>
-            <!-- Поле для ввода комментария -->
-            <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
-            <!-- Кнопка отправки формы -->
-            <button class="buttonForma" type="submit">Отправить</button>
-      </form>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-<div>
-    <div class="gallery">
-        <div class="img">
-          <img src="для сайта/каталог/komp7.jpg" alt="Image 1">
-          <div class="caption">
-            <p>"Цветочное искушение"</p>
-            <p>Цена: 66byn</p>
-            <button class="order-btn" onclick="showOrderForm( 'Цветочное искушение','для сайта/каталог/komp7.jpg')">Заказать</button>
-          </div>
-        </div>
-
-        <div class="img">
-          <img src="для сайта/каталог/komp8.jpg" alt="Image 2">
-          <div class="caption">
-            <p>"Ботанический сад"</p>
-            <p>Цена: 75byn</p>
-            <button class="order-btn" onclick="showOrderForm('Ботанический сад', 'для сайта/каталог/komp8.jpg')">Заказать</button>
-          </div>
-        </div>
-
-        <div class="img">
-          <img src="для сайта/каталог/komp9.jpg" alt="Image 3">
-          <div class="caption">
-            <p>"Цветочный оазис"</p>
-            <p>Цена: 80byn</p>
-            <button class="order-btn" onclick="showOrderForm('Цветосный оазис', 'для сайта/каталог/komp9.jpg')">Заказать</button>
-          </div>
-        </div>
-     
-      
-      <div id="order-modal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeOrderForm()">&times;</span>
-          <img src="" alt="Selected bouquet" id="selected-bouquet-image">
-          <form id="order-form">
-              <p id="selected-bouquet-description"></p>
-            <!-- Поле для ввода имени -->
-            <input type="text" placeholder="Введите ваше ФИО" required>
-            <!-- Поле для ввода телефона -->
-            <input type="tel" placeholder="Введите ваш номер телефона" required>
-            <!-- Поле для ввода даты -->
-            <input type="date" placeholder="Выберите дату" required>
-            <!-- Поле для ввода времени -->
-            <input type="time" placeholder="Выберите время" required>
-            <!-- Поле для ввода комментария -->
-            <textarea placeholder="Оставьте коментарии к букету(необязательно)"></textarea>
-            <!-- Кнопка отправки формы -->
-            <button class="buttonForma" type="submit">Отправить</button>
-      </form>
-        </div>
-      </div>
-    </div>
+<div class="galeryContainer">
 </div>
 
     <footer class="background">
@@ -212,6 +55,9 @@
                 </div>
             </div>
     </footer>
-    
+<script src="scriptMain.js"></script>
+<script src="forCatalogComp.js"></script>
+<script src="aboutUs.js"></script>
+
 </body>
 </html>

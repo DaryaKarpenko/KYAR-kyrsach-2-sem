@@ -1,7 +1,5 @@
 // Функция для отображения модальной формы заказа букета
-function showOrderForm(bouquetName, bouquetImagePath) {
-    // Обновляем текст для отображения выбранного букета
-    document.getElementById("selected-bouquet-description").innerText = "Выбран букет: " + bouquetName;
+function showOrderForm(bouquetImagePath) {
     // Устанавливаем путь к изображению выбранного букета
     document.getElementById("selected-bouquet-image").src = bouquetImagePath; // Путь к выбранному изображению букета
     // Отображаем модальное окно заказа букета
@@ -24,3 +22,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+
+
+

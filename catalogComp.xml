@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="gallery">
+      <imagine>
+    <src>для сайта/каталог/komp1.jpg</src>
+        <div>
+          <title>Букет "Цветочное обилие"</title>
+          <price>Цена: 95 byn</price>
+        </div>
+
+      <imagine>
+    <src>для сайта/каталог/komp2.jpg</src>
+        <div>
+          <title>Букет "Цветочный аромат"</title>
+          <price>Цена: 55 byn</price>
+      </div>  
+
+      <imagine>
+    <src>для сайта/каталог/komp3.jpg</src>
+        <div>
+          <title>Букет "Цветочный рай"</title>
+          <price>Цена: 85 byn</price>
+       </div>
+
+<div class="gallery">
+  <imagine>
+    <src>для сайта/каталог/komp4.jpg</src>
+    <div>
+      <title>Букет "Настроение"</title>
+      <price>Цена: 85 byn</price>
+   </div>
+
+  <imagine>
+    <src>для сайта/каталог/komp5.jpg</src>
+    <div>
+      <title>Букет "Цветочное изобилие"</title>
+      <price>Цена: 68 byn</price>
+   </div>
+
+  <imagine>
+    <src>для сайта/каталог/komp6.jpg</src>
+    <div>
+      <title>Букет "Цветочный уголок"</title>
+      <price>Цена: 73 byn</price>
+    </div>
+
+<div class="gallery">
+  <imagine>
+    <src>для сайта/каталог/komp7.jpg</src>
+    <div>
+      <title>Букет "Цветочное искушение"</title>
+      <price>Цена: 66 byn</price>
+  </div>
+
+  <imagine>
+    <src>для сайта/каталог/komp8.jpg</src>
+    <div>
+      <title>Букет "Ботанический сад"</title>
+      <price>Цена: 75 byn</price>
+  </div>
+
+  <imagine>
+    <src>для сайта/каталог/komp9.jpg</src>
+    <div>
+      <title>Букет "Цветочный оазис"</title>
+      <price>Цена: 80 byn</price>
+    </div>
+
+</cataloge>

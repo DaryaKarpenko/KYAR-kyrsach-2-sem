@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     let array = [];
-    fetch('odnot.xml')
+    fetch('catalogComp.xml')
         .then(function (response) {
             return response.text();
         })
@@ -58,7 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
                     <form id="order-form">
                         <p id="selected-bouquet-description"></p>
                             <input type="text" placeholder="Введите ваше ФИО" required>
-                            <input type="number" min="1" placeholder="Выберите количество" required>
                             <input type="tel" placeholder="Введите ваш номер телефона" required>
                             <input type="date" placeholder="Выберите дату" required>
                             <input type="time" placeholder="Выберите время" required>
