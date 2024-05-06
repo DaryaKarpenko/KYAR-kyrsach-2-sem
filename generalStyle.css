@@ -200,7 +200,7 @@ h4, .social-media a{
             margin-top: 140px;
         }
     }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .nav ul {
         display: none; /* Скрыть основное меню на маленьких экранах */
     }

@@ -140,7 +140,7 @@ button{
 
 
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     body{
         width: 120%;
     }
