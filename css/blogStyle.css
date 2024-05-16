@@ -1,0 +1,280 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3% 2% 3% 3%;
+  align-items: center;
+}
+
+.containerTwos {
+  align-items: center;
+  margin: 2% 0 4% 0%;
+}
+.containerTwos p {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: Inter;
+  font-size: 20px;
+}
+.containerTwos h2 {
+  margin-bottom: 0;
+}
+
+.marker {
+  background-color: #F2DED7;
+  border-radius: 10px;
+}
+
+.imageTwos {
+  display: none;
+}
+
+.text {
+  flex: 0 0 60%;
+  padding-right: 1%;
+}
+.text p {
+  padding: 3px;
+  font-family: Inter;
+  font-size: 20px;
+  text-align: left;
+}
+
+.containerTwo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #F2DED7;
+  border: solid 1px black;
+}
+.containerTwo p {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: Inter;
+  font-size: 20px;
+}
+
+.containerFactsLeft {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3% 2% 3% 3%;
+  align-items: center;
+}
+.containerFactsLeft p {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: Inter;
+  font-size: 20px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  height: auto;
+}
+
+.textTwo {
+  flex: 0 0 60%;
+  margin-right: 4%;
+  margin-left: 5%;
+}
+
+.imageTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.imageTwoss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.imageFacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding-left: 4%;
+}
+
+.imageLeft {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+  .text p {
+    font-size: 16px;
+  }
+  .textTwo p {
+    font-size: 16px;
+  }
+  .image {
+    width: 25%;
+  }
+  .imageTwoss {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text p {
+    font-size: 14px;
+  }
+  .textTwo p {
+    font-size: 14px;
+  }
+  .image {
+    width: 28%;
+  }
+  .imageTwoss {
+    width: 28%;
+  }
+  .imageFacts {
+    width: 25%;
+  }
+  .imageLeft {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 744px) {
+  .text {
+    flex: 1;
+    margin-right: 0;
+  }
+  .text p {
+    font-size: 14px;
+  }
+  .image {
+    width: 35%;
+    height: 410px;
+    margin-top: 1%;
+  }
+  .container {
+    padding: 20px 5px;
+  }
+  .containerTwo {
+    padding: 7% 0;
+  }
+  .containerTwo h2 {
+    margin-left: 13%;
+  }
+  .containerTwos {
+    padding: 7% 0;
+  }
+  .imageTwo {
+    width: 35%;
+    height: 410px;
+    margin: 1% 10px 10px 10px;
+  }
+  .imageTwoss {
+    width: 35%;
+    height: 410px;
+    margin: 1% 10px 10px 10px;
+  }
+  .textTwo {
+    flex: 1;
+    margin: 5px;
+  }
+  .textTwo p {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .imageFacts {
+    width: 35%;
+    height: auto;
+    margin: 1% 10px 10px 10px;
+  }
+  .imageLeft {
+    width: 35%;
+    height: auto;
+    margin: 1% 10px 10px 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text p {
+    font-size: 12px;
+  }
+  .textTwo p {
+    font-size: 12px;
+  }
+  .imageTwoss {
+    width: 29%;
+  }
+  .imageFacts {
+    width: 29%;
+  }
+  .imageLeft {
+    width: 29%;
+  }
+  .image {
+    width: 100%;
+    height: 300px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 430px) {
+  body {
+    width: 100%;
+  }
+  h1 {
+    margin-top: 20%;
+  }
+  .text p {
+    font-size: 12px;
+  }
+  .textTwo p {
+    font-size: 12px;
+  }
+  .containerTwos {
+    margin: 0;
+  }
+  .imageTwoss {
+    display: none;
+  }
+  .imageTwos {
+    display: inline-block;
+    width: 55%;
+    padding: 1% 10px 10px 10px;
+  }
+  .imagesTwo {
+    width: 55%;
+    height: 210px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .imageFacts {
+    width: 55%;
+  }
+  .imageLeft {
+    width: 55%;
+  }
+  iframe {
+    height: 300px;
+    width: 300px;
+  }
+  .containerFactsLeft {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 320px) {
+  .background {
+    width: 100%;
+  }
+}

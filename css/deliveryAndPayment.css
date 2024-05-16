@@ -1,0 +1,214 @@
+.textUnderTitle {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  flex: 0 0 60%;
+  font-family: Inter;
+  font-size: 21px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+.column {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  position: relative;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 2%;
+  border-radius: 6%;
+  width: 25%;
+  height: auto;
+  z-index: 1;
+}
+.column p {
+  font-family: Inter;
+  font-size: 21px;
+  margin-bottom: 0;
+}
+.column img {
+  width: 50%;
+  height: auto;
+}
+
+.centered {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.left-column {
+  flex: 1;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-column p {
+  font-family: Inter;
+  font-size: 21px;
+}
+
+.right-column {
+  flex: 1;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form input {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+form button {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.textAndForma {
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.textAndForma p {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.containerForma {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=text] {
+  width: 60%;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+input[type=tel] {
+  width: 60%;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  width: 60%;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #D9E8E8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #F2DED7;
+}
+
+h5 {
+  text-align: center;
+  font-family: Abhaya Libre;
+  letter-spacing: 1% s;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+
+@media screen and (max-width: 744px) {
+  .container {
+    margin: 0 15px;
+  }
+  .text {
+    flex: 1;
+    flex: 50% 0;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 17px;
+  }
+  .text p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
+  .slider {
+    flex: 1;
+    margin-top: 50px;
+  }
+  .classForCpicok {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .imagess {
+    width: 450px;
+  }
+  .left-side p {
+    font-size: 16px;
+  }
+  .textUnderTitle {
+    font-size: 13px;
+  }
+  .column {
+    padding: 2%;
+    height: 250px;
+  }
+  .column img {
+    margin-bottom: 10px;
+    height: 100px;
+  }
+  .column h5 {
+    font-size: 15px;
+  }
+  .column p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .left-column p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .imagess {
+    padding-left: 0;
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerForma {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-column {
+    width: 100%;
+  }
+  form {
+    align-items: center;
+  }
+}
