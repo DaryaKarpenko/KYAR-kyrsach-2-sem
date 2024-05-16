@@ -1,0 +1,162 @@
+body {
+    background-color: #F8F3EF;
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+header {
+    background-color: #F2DED7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: #000;
+    z-index: 9999;
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #000;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+@media (max-width: 744px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2DED7;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0; /* Добавляем внутренний отступ сверху и снизу */
+
+    }
+    .nav-links a{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: Inter;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Добавляем внешние отступы между ссылками */
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-right: 35px;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        margin-left: 1%;
+    }
+
+    .text p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    main {
+        width: 120%;
+    }
+
+    .container {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .slider {
+        margin-top: 1%;
+        margin-right: 2%;
+        margin-bottom: 0;
+    }
+
+    .classForCpicok li {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .classForCpicok {
+        margin: 0;
+    }
+
+    .podval {
+        display: block;
+    }
+
+    .left-side p {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .right-side {
+        margin-top: 5%;
+        margin-bottom: 8%;
+    }
+
+    .right-side h4 {
+        white-space: nowrap;
+    }
+
+    .imagess {
+        display: block;
+    }
+}

@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery and payment</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&family=Kosugi+Maru&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  href="generalStyle.css">
-    <link rel="stylesheet"  href="deliveryAndPaymentStyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&family=Kosugi+Maru&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="generalStyle.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="deliveryAndPaymentStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
+
 <body>
     <header>
-        <nav class="nav">
-            <input id="menu__toggle" type="checkbox">
-            <label class="menu__btn" for="menu__toggle">&#8801;</label>
-            <img class="logo" src="для сайта/logo.svg">
-            <p>FlowerHaven</p>
-            <div class="menuBox" id="menuBox"> 
-                <ul>
-                    <li><a class="menuItem" href="main.html">Главная</a></li>
-                    <li><a class="menuItem" href="main.html#section1">Каталог</a></li>
-                    <li><a class="menuItem" href="MasterClasses.html">Мастер классы</a></li>
-                    <li><a class="menuItem" href="blog.html">Блог</a></li> 
-                    <li><a class="menuItem" href="aboutUs.html">О нас</a></li>
-                </ul>
+        <div class="logo">
+            <img src="для сайта/logo.svg" alt="Logo">
+            <span>FlowerHaven</span>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="main.html#section1">Каталог</a></li>
+                <li><a href="MasterClasses.html">Мастер классы</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="aboutUs.html"> О нас</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
-<h1>Доставка и оплата</h1>
-<p class="textUnderTitle">Мы гарантируем своевременную и надежную доставку вашего заказа. 
-    Наша служба доставки работает эффективно, чтобы ваши цветочные композиции и букеты достигли 
-    своих адресатов в сохранности и свежести. Мы доставляем цветы круглосуточно по городу и за 
-    его пределами, чтобы вы могли порадовать своих близких в любое время и в любом месте.
-</p>
+    <h1>Доставка и оплата</h1>
+    <p class="textUnderTitle">Мы гарантируем своевременную и надежную доставку вашего заказа.
+        Наша служба доставки работает эффективно, чтобы ваши цветочные композиции и букеты достигли
+        своих адресатов в сохранности и свежести. Мы доставляем цветы круглосуточно по городу и за
+        его пределами, чтобы вы могли порадовать своих близких в любое время и в любом месте.
+    </p>
 
-<div class="background">
-    <h2 class="centered">Как сделать заказ?</h2>
+    <div class="background">
+        <h2 class="centered">Как сделать заказ?</h2>
 
-<div class="container">
-    <div class="column">
-            <img src="для сайта/laptopForPayment.svg" alt="Изображение 1" class="imageForPayment">
-            <h5>Заявка</h5>
-            <p>Оставьте заявку на сайте либо по номеру телефону +375 29 314 6050</p>
-            <h6 class="number">1</h6>
-    </div>
-    <div class="column">
-            <img src="для сайта/phoneForPayment.svg" alt="Изображение 2" class="imageForPayment">
-            <h5 >Уточнение деталей</h5>
-            <p class="otstyp">Менеджер звонит вам и уточняет детали</p>
-            <h6 class="number">2</h6>
-    </div>
-    <div class="column">
-            <img src="для сайта/flowerForPayment.svg" alt="Изображение 3" class="imageForPayment">
-            <h5 >Получение букета</h5>
-            <p class="otstyp">Вы получаете букет и радуете близких</p>
-            <h6 class="number">3</h6>
-    </div>
-</div>
-</div>
+        <div class="container">
+            <div class="column">
+                <img src="для сайта/laptopForPayment.svg" alt="Изображение 1" class="imageForPayment">
+                <h5>Заявка</h5>
+                <p>Оставьте заявку на сайте либо по номеру телефону +375 29 314 6050</p>
 
-<div class="textAndForma">
-    <div class="containerForma">
-        <!-- Левая часть -->
-        <div class="left-column">
-            <h2 class="centered">Не смогли определиться?</h2>
-            <p>Оставьте заявку и в течении 10 минут с вами свяжется наш флорист для бесплатной консультации</p>
-        </div>
-        <!-- Правая часть -->
-        <div class="right-column">
-            <form>
-                <!-- Поле для ввода имени -->
-                <input type="text" placeholder="Введите ваше имя" required>
-                <!-- Поле для ввода телефона -->
-                <input type="tel" placeholder="Введите ваш телефон" required>
-                <!-- Кнопка отправки формы -->
-                <button type="submit">Отправить</button>
-            </form>
+            </div>
+            <div class="column">
+                <img src="для сайта/phoneForPayment.svg" alt="Изображение 2" class="imageForPayment">
+                <h5>Уточнение деталей</h5>
+                <p>Менеджер звонит вам и уточняет детали</p>
+
+            </div>
+            <div class="column">
+                <img src="для сайта/flowerForPayment.svg" alt="Изображение 3" class="imageForPayment">
+                <h5>Получение букета</h5>
+                <p>Вы получаете букет и радуете близких</p>
+
+            </div>
         </div>
     </div>
-</div>
 
+    <div class="textAndForma">
+        <div class="containerForma">
+            <!-- Левая часть -->
+            <div class="left-column">
+                <h2 class="centered">Не смогли определиться?</h2>
+                <p>Оставьте заявку и в течении 10 минут с вами свяжется наш флорист для бесплатной консультации</p>
+            </div>
+            <!-- Правая часть -->
+            <div class="right-column">
+                <form>
+                    <!-- Поле для ввода имени -->
+                    <input type="text" placeholder="Введите ваше имя" required>
+                    <!-- Поле для ввода телефона -->
+                    <input type="tel" placeholder="Введите ваш телефон" required>
+                    <!-- Кнопка отправки формы -->
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-<footer class="background">
-    <h2 class="textPodval">Где нас найти?</h2>
+    <footer class="background">
+        <h2 class="textPodval">Где нас найти?</h2>
         <div class="podval">
             <div class="left-side">
                 <p>ул. Центральная 28, г.Минск, Беларусь</p>
                 <div class="imagess">
-                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:10px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/house/Zk4YcgZlTEwDQFtpfXVwdX9hYA==/?ll=27.415905%2C53.914306&utm_medium=mapframe&utm_source=maps&z=18.89" style="color:#eee;font-size:10%;position:absolute;top:2%;">Каменногорская улица, 28 на карте Минска, ближайшее метро Каменная Горка — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=27.415905%2C53.914306&mode=whatshere&whatshere%5Bpoint%5D=27.415594%2C53.914324&whatshere%5Bzoom%5D=17&z=18.89" width="80%" height="350" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <a href="https://yandex.by/maps/?ll=27.415905%2C53.914306&z=18.89" target="_blank">
+                        <iframe
+                            src="https://yandex.by/map-widget/v1/?ll=27.415905%2C53.914306&mode=whatshere&whatshere%5Bpoint%5D=27.415594%2C53.914324&whatshere%5Bzoom%5D=17&z=18.89"></iframe>
+                    </a>
                 </div>
                 <p>Режим работы с 8:00 до 23:00</p>
             </div>
@@ -103,7 +115,9 @@
                 </div>
             </div>
         </div>
-</footer>
+    </footer>
+
 </body>
 <script src="aboutUs.js"></script>
+
 </html>

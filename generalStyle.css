@@ -1,370 +1,223 @@
-body{
-    background-color: #F8F3EF;
-    margin: 0; /* Убираем внешние отступы */
-    padding: 0; /* Убираем внутренние отступы */
-}
-/*Header*/
-.nav {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    border-bottom: solid 1px black;
-    z-index: 10000;
-    background-color: #F2DED7;
-    display: flex;
-    align-items: center;
-}
-.menu{
-    display: flex;
-    justify-content: space-between;
-    flex-basis:100%;
-}
-.menuBox{
-    display:flex;
-    gap:5px;
-}
-.navigationButton{
-    display: none;
-}
-.nav a {
-    text-decoration: none;
-    color: #71624D;
-    font-family: Inter;
-    font-size: 110%;
-    white-space: nowrap;
-}
-.menu__btn, .nav input{
-    display: none;
-}
-.nav ul {
-    margin-left: auto; /* Перемещение меню вправо */
-    list-style: none;
-    display: flex;
-}
-a{
-    text-decoration: none;
-    color:black;
-}
-.menuBox {
-    text-align: right; 
-    margin-left: 52%;
-}
-
-.menuBox li{
-    margin-left: 15px;
-    margin-right: 10px;
-}
-.nav p {
-    margin: 0;
-    text-align: left;
-    font-family: Inter;
-    font-size: 140%;
-    font-weight: 600;
-}
-
-.logo {
-    padding-top: 6px;
-    margin-left: 1%;
-    margin-right: 10px;
-    width: 58px;
-    float: left;
-    font-family: Inter;
-    font-size: 127%;
-    font-weight: 600;
-}
-
-.logo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-/*подвал*/
+/* Footer */
 .podval {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px;
 }
-.left-side p, .right-side a{
-    font-family: Inter;
-    font-size: 110%;
-}
- h2 {
+
+.social-media a {
     text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #D9E8E8;
+    width: 70%;
+    height: 30px;
 }
-h1, h2, h3 {
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-side p,
+.right-side a {
+    font-family: Inter;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Abhaya Libre;
+    letter-spacing: 6px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+h1 {
     text-align: center;
     font-family: Abhaya Libre;
     letter-spacing: 6px;
-    font-size: 250%;
+    font-size: 24px;
     font-weight: 800;
+    margin-top: 10%;
 }
-h4{
+
+h3 { 
+    text-align: center;
     font-family: Abhaya Libre;
-    letter-spacing: 1%;
-    font-size: 170%;
+    letter-spacing: 6px;
+    font-size: 24px;
     font-weight: 800; 
 }
 
-.left-side {
-    flex:1;
-    text-align: center;
-    width: 45%;
-}
-.imagess {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-.right-side {
-    flex: 1;
-    margin-top: 3%;
-    border-radius: 1%;
-    width: 45%;
-}
-.social-media  {
-    border-radius: 1%;
-    margin-left: 20%;
-    margin-top: 4%;
-}
-h4{
-    margin-right: 3%;
-}
-h4, .social-media a{
+h4 {
+    font-family: Abhaya Libre;
+    letter-spacing: 1%;
+    font-size: 20px;
+    font-weight: 800;
     text-align: center;
 }
-.social-media a {
-    display: block;
-    margin: 3% 2% 3% 0;
-    padding: 1%;
-    border-radius: 25px; /* Закругляем углы */
-    background-color: #D9E8E8; /* Серый цвет фона */
-    width: 65%;
-    height: 30px;
-}
+
 .bold {
-    font-weight: 800; /* полужирный текст  */
-    font-size: 118%;
+    font-weight: 800;
+    font-size: 21px;
     font-family: Inter;
 }
+
 .background {
     background-color: #F2DED7;
     border: solid 1px black;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
 }
-@media screen and (max-width: 744px) {
+
+iframe {
+    width: 450px;
+    height: 420px;
+}
+
+.right-side {
+    justify-content: center;
+    flex: 1;
+}
+
+.left-side {
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+}
+@media screen and (max-width: 1024px){
+
+    .bold {
+        font-size: 17px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .bold{
+        font-size: 16px;
+    }
+}
+@media (max-width: 800px) {
+    iframe {
+        width: 310px;
+
+    }
+
+    .imagess {
+        padding-left: 12%;
+    }
+}
+
+@media (max-width: 680px) {
     h1{
-        margin-top: 90px;
-        font-size: 33px;
+        padding-top: 5%;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2DED7;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-right: 35px;
+    }
+}
+@media screen and (max-width: 600px){
+    .bold{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .bold{
+        font-size: 14px;
+    }
+}
+@media (max-width: 420px) {
+    h1 {
+        margin-left: 1%;
+    }
+
+    .text p {
+        font-size: 12px;
         margin-bottom: 0;
     }
-    .logo{
-        width: 50px;
-    }
-    .nav a{
-        font-size: 90%;
-        margin-top: 20px;
-    }
-    .container{
-        margin: 0 15px;
-    }
-    .item img {
-        margin-right: 20px;
-        margin-top: 60px;
-    } 
-      
-        .nav ul {
-           padding-left: 7px;
-    
-        }
-        .menuBox{
-            margin-left: 0;
-            margin-right: 0;
-        }
 
-        h2{
-            font-size: 27px ;
-        }
-        h4{
-            font-size: 20px ;
-        }
-        .imagess{
-            width: 450px;
-        }
-    
-        .left-side p{
-        font-size: 16px;
-        margin-left: 77px;
-        }
-        .right-side{
-            margin-top: 140px;
-        }
-    }
-@media screen and (max-width: 420px) {
-    .nav ul {
-        display: none; /* Скрыть основное меню на маленьких экранах */
-    }
-    
-    .navigationButton {
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        z-index: 9999; /* Передвинуть кнопку поверх остальных элементов */
-    }
-    
-    .menuBox.active ul {
-        display: flex; /* Показать основное меню при активации кнопки */
-        flex-direction: column; /* Выводить пункты меню в столбик */
-        align-items: flex-start; /* Выравнивать пункты меню по левому краю */
-        padding-left: 0; /* Убрать отступ слева для списка */
-        margin-top: 10px; /* Добавить небольшой отступ сверху */
-    }
-    
-    .logo {
-        position: absolute;
-        right: 0;
-        margin-right: 25px;
-    }
-    
-    .nav p {
-        position: absolute;
-        right: 0;
-        margin-right: 80px;
+    main {
+        width: 120%;
     }
 
-    /* контейнер меню */
-    /* скрываем чекбокс */
-    #menu__toggle {
-        opacity: 0;
-    }
-    /* стилизуем кнопку */
-    .menu__btn {
-        display: flex; /* используем flex для центрирования содержимого */
-        align-items: center;  /* центрируем содержимое кнопки */
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        z-index: 1;
-    }
-    /* добавляем "гамбургер" */
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #616161;
-    }
-    .menu__btn > span::before {
-        content: '';
-        top: -8px;
-    }
-    .menu__btn > span::after {
-        content: '';
-        top: 8px;
-    }
-    .nav {
-        top: 0;
-        position: fixed;
-        width: 100%;
-        height: 80px;
-        border-bottom: solid 1px black;
-        z-index: 10000;
-        background-color: #F2DED7;
+    .container {
+        margin-bottom: 0;
         display: flex;
-        align-items: center;
     }
 
-    .menuBox {
-        display: none; /* Изначально скрываем меню */
-        position: fixed;
-        top: 80px; /* Отступ сверху равен высоте заголовка */
-        width: 100%;
-        background-color: #ECEFF1;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        padding-top: 10px; /* Добавить отступ сверху */
+    .slider {
+        margin-top: 1%;
+        margin-bottom: 0;
+        justify-content: center;
     }
 
-    .menuBox.active {
-        display: block; /* Показываем меню, когда есть класс active */
+    .classForCpicok li {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .classForCpicok {
         margin: 0;
     }
 
-    .menuItem {
-        display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    .menuItem:hover {
-        background-color: #CFD8DC;
-        flex:1;
-    }
-
-    #menu__toggle:checked + .menuBox {
+    .podval {
         display: block;
     }
 
-    .menu__btn {
-        display: block;
-        position: fixed;
-        top: 30px;
-        left: 20px;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 9999;
+    .left-side p {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    
+    .right-side h4 {
+        white-space: nowrap;
     }
 
-    /* элементы меню */
-    .menuItem {
+
+
+    .imagess {
         display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
     }
 
-    .menuBox li {
-        display: inline;
+    iframe {
+        height: 300px;
+        width: 300px;
     }
-.podval{
-    display: block;
 }
-.left-side p{
-    font-size: 13px;
-    white-space: nowrap;
-    margin-left: 50%;
+@media screen and (max-width: 375px) {
+h1{
+    margin-top: 15%;
 }
-.right-side{
-    margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 8%;
 }
-.right-side h4{
-    margin-left: 20%;
-    white-space: nowrap;
-}
-.social-media a{
-    width: 110% ;
-    margin-left: 10%;
-}
-.imagess{
-    display: block;
-}
-iframe{
-    height: 300px;
-    width: 300px;
-}
+@media screen and (max-width: 300px) {
+    .bold {
+        font-size: 11px;
+    }
+    
 }

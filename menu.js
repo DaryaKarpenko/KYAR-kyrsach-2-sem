@@ -5,3 +5,4 @@ menuToggle.addEventListener('change', function() {
         menuBox.classList.remove('active');
     }
 });
+ 

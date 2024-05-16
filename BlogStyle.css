@@ -1,11 +1,3 @@
-h1{
-    text-align: center;
-    margin-top: 6%;
-    margin-bottom: 1%;
-}
-h2{
-    text-align: center;
-}
  /*первый абзац*/
  .container, .containerTwos, .containerOne {
     display: flex;
@@ -18,40 +10,42 @@ h2{
 }
 .text {
     flex: 0 0 60%; /* Жестко задаем ширину текста */
-    margin-right: 7%; /* Расстояние между текстом и изображением */
-    margin-left: 4%;
+    padding-right: 1%;
+    padding-left: 8%;
+
 }
 .text p  {
     margin-top: 3%;
     margin-bottom: 3%;
     font-family: Inter;
-    font-size: 120%;
+    font-size: 20px;
     text-align: left;
 }
 
  .containerTwo p, .containerFactsLeft p, .containerTwos p{
     margin-top: 3%;
-    margin-bottom: 3%px;
+    margin-bottom: 3%;
     font-family: Inter;
-    font-size: 120%;
+    font-size: 20px;
 }
 .image {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 18%;
-    height: 500px;
+    width: 20%;
+    height: auto ;
     margin-left: 3%;
 }
  /*второй абзац*/
-.containerTwo, .containerTwos {
+.containerTwo {
     display: flex;
     flex-wrap: wrap;
     align-items: center; /* Выравнивание содержимого по вертикали */
     background-color: #F2DED7;
     border: solid 1px black;
 }
+
 .textTwo {
     flex: 0 0 60%; /* Жестко задаем ширину текста */
     margin-right: 4%; /* Расстояние между текстом и изображением */
@@ -60,12 +54,9 @@ h2{
 .imageTwo, .imageTwoss {
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    margin-left: 7%;
-    margin-right: 4%;
-    width: 18%;
-    height: 510px;
+    width: 20%;
+    height: auto;
     margin-bottom: 2%;
 }
 .containerTwos h2{
@@ -82,13 +73,13 @@ h2{
     text-align: center;
     align-items: center;
     width: 17%;
-    height: 410px;
+    height: auto;
     margin-left: 4%;
 }
 .containerFactsLeft {
     display: flex;
     flex-wrap: wrap;
-    margin: 3% 2% 3% 3%;
+    padding: 3% 2% 3% 3%;
     align-items: center; /* Выравнивание содержимого по вертикали */
 
 }
@@ -99,10 +90,30 @@ h2{
     align-items: center;
     margin-left: 5%;
     width: 17%;
-    height: 410px;
+    height: auto;
 }
 .textPodval {
     margin-top: 3%;
+}
+@media screen and (max-width: 1024px){
+    .text p, .textTwo p{
+        font-size: 16px;
+    }
+    .image, .imageTwoss {
+        width: 25%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .text p, .textTwo p{
+        font-size: 14px;
+    }
+    .image,  .imageTwoss {
+        width: 28%;
+    }
+    .imageFacts, .imageLeft{
+        width: 25%;
+    }
 }
 @media screen and (max-width: 744px) {
     .text p {
@@ -118,10 +129,10 @@ h2{
         margin-top: 1%;
     }
     .container, .containerOne{
-        margin: 20px 5px;
+        padding: 20px 5px;
     }
     .containerTwo, .containerTwos{
-        margin: 7% 0;
+        padding: 7% 0;
     }
     .containerTwo h2{
         margin-left: 13%;
@@ -141,17 +152,29 @@ h2{
     }
     .imageFacts{
         width: 35%;
-        height: 410px;
+        height: auto;
         margin: 1% 10px 10px 10px;
     }
     .imageLeft{
         width: 35%;
-        height: 410px;
+        height: auto;
         margin: 1% 10px 10px 10px;
     }
 
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
+
+    .text p, .textTwo p{
+        font-size: 12px;
+    }
+    .image,  .imageTwoss {
+        width: 29%;
+    }
+    .imageFacts, .imageLeft{
+        width: 29%;
+    }
+}
+@media screen and (max-width: 425px) {
     body{
         width: 120%;
     }
@@ -159,25 +182,28 @@ h2{
         margin-top: 20%;
     }
     .text p, .textTwo p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .image{
         float: right;
         width: 45%;
         height: 280px;
     }
-    .containerTwos, .containerOne{
+     .containerOne{
         display: inline-block;
+    }
+    .containerTwos{
+        display: inline-block;
+        margin: 0;
     }
     .imageTwoss{
         display: none;
     }
     .imageTwos{
         display: inline-block;
-        float:left;
         width: 35%;
         height: 210px;
-        margin: 1% 10px 10px 10px;
+        padding: 1% 10px 10px 10px;
     }
     .imagesTwo{
         width: 35%;
@@ -199,5 +225,10 @@ h2{
     iframe{
     height: 300px;
     width: 300px;
+    }
+}
+@media screen and (max-width:320px){
+    .background{
+        width: 107%;
     }
 }

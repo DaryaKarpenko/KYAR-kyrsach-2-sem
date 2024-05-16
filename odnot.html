@@ -13,31 +13,36 @@
     href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@100..900&family=Kosugi+Maru&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="header_footer.css">
 </head>
 
 <body>
   <header>
-    <nav class="nav">
-        <input id="menu__toggle" type="checkbox">
-        <label class="menu__btn" for="menu__toggle">&#8801;</label>
-        <img class="logo" src="для сайта/logo.svg">
-        <p>FlowerHaven</p>
-        <div class="menuBox" id="menuBox"> 
-           <ul>
-            <li><a class="menuItem" href="main.html">Главная</a></li>
-            <li><a class="menuItem" href="MasterClasses.html">Мастер классы</a></li>
-            <li><a class="menuItem" href="deliveryAndPayment.html">Доставка и оплата</a></li>
-            <li><a class="menuItem" href="blog.html">Блог</a></li> 
-            <li><a class="menuItem" href="aboutUs.html">О нас</a></li>
-           </ul>
-        </div>
+    <div class="logo">
+      <img src="для сайта/logo.svg" alt="Logo">
+      <span>FlowerHaven</span>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="main.html">Главная</a></li>
+        <li><a href="main.html#section1">Каталог</a></li>
+        <li><a href="MasterClasses.html">Мастер классы</a></li>
+        <li><a href="deliveryAndPayment.html">Доставка и оплата</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="aboutUs.html"> О нас</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-</header>
+  </header>
 
   <h1>Однотипные букеты</h1>
   <div class="galeryContainer">
   </div>
-  
+
   <footer class="background">
     <h2 class="textPodval">Где нас найти?</h2>
     <div class="podval">
@@ -69,4 +74,5 @@
 <script src="scriptMain.js"></script>
 <script src="forOdnot.js"></script>
 <script src="aboutUs.js"></script>
+
 </html>

@@ -1,61 +1,64 @@
-.textUnderTitle{
+.textUnderTitle {
     text-align: center;
     margin-top: 2%;
     margin-bottom: 3%;
-    flex: 0 0 60%; /* Жестко задаем ширину текста */
+    flex: 0 0 60%;
+    /* Жестко задаем ширину текста */
     font-family: Inter;
-    font-size: 110%;
+    font-size: 21px;
 }
-h1{
-    margin-top: 5%;
-    margin-bottom: 1%;
-}
+
 /*Первый абзац*/
 .container {
     display: flex;
     justify-content: center;
     z-index: 0;
 }
+
 .column {
-    padding: 2%;
-    margin: 1% 5% 3% 5%; /* Задайте нужное вам значение расстояния между блоками */
-    float: left; /* Чтобы блоки выстраивались в ряд по горизонтали */
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    float: left;
     position: relative;
     background-color: #f0f0f0;
     text-align: center;
     padding: 2%;
     border-radius: 6%;
-    width: 30%;
-    height: 350px;
+    width: 25%;
+    height: auto;
     z-index: 1;
 }
+
 .column p {
     font-family: Inter;
-    font-size: 110%;
+    font-size: 21px;
+    margin-bottom: 0;
 }
+
 .column img {
     width: 50%;
-    height: 170px;
+    height: auto;
 }
+
 .centered {
     text-align: center;
     margin-bottom: 4%;
 }
-.number{
-    font-family: Abhaya Libre;
-    font-size: 350%;
-    font-weight: 800;
-    margin: 0;
-}
+
 /*Абзац с формой*/
-.left-column, .right-column {
+.left-column,
+.right-column {
     flex: 1;
-    padding: 0 2%; /* Добавляем немного отступов для стилизации */
+    padding: 0 2%;
+    /* Добавляем немного отступов для стилизации */
 }
-.left-column p{
+
+.left-column p {
     font-family: Inter;
-    font-size: 110%;
+    font-size: 21px;
 }
+
 /* Стили для формы в правой части */
 form {
     display: flex;
@@ -63,22 +66,22 @@ form {
 }
 
 /* Стили для полей ввода и кнопки */
-.textAndForma{
-    margin: 7% 0;
+.textAndForma {
+    align-items: center;
+    padding-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
+
 .textAndForma p {
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: center;
 }
+
 .containerForma {
     display: flex;
     justify-content: center;
-}
-
-.left-column, .right-column {
-    flex: 1;
-    padding: 0 2%; /* Добавляем немного отступов для стилизации */
 }
 
 /* Стили для формы в правой части */
@@ -92,12 +95,11 @@ input[type="text"],
 input[type="tel"],
 button {
     width: 60%;
-    height: 40px;
+    height: 35px;
     padding: 1%;
-    margin-bottom: 1%;
     border: 1px solid #ccc;
-    box-sizing: border-box; /* Это свойство учитывает padding и border в общей ширине элемента */
-    margin: 1%;
+    box-sizing: border-box;
+    /* Это свойство учитывает padding и border в общей ширине элемента */
 }
 
 button {
@@ -109,364 +111,145 @@ button {
 }
 
 button:hover {
-    background-color: #F2DED7;  
+    background-color: #F2DED7;
 }
+
 h5 {
     text-align: center;
     font-family: Abhaya Libre;
     letter-spacing: 1%s;
-    font-size: 150%;
+    font-size: 22px;
     font-weight: 800;
     margin: 0;
 }
+
 @media screen and (max-width: 744px) {
-    h1{
-        margin-top: 90px;
-        font-size: 33px;
-        margin-bottom: 0;
-    }
-    
-    .logo{
-        width: 50px;
-    }
-    .nav a{
-        font-size: 90%;
-        margin-top: 20px;
-    }
-    .container{
+    .container {
         margin: 0 15px;
     }
-    .item img {
-        margin-right: 20px;
-        margin-top: 60px;
-    } 
-     .text {
-          flex: 1; /* Занимаем всю доступную ширину */
-          flex: 50% 0;
-          margin-left: 0; /* Убираем левый отступ */
-          margin-top: 0;
-          font-size: 17px;
-        }
-    
-      .previous, .next{
-        margin-left: 33px;
-        }
-        .slider {
-          flex: 1; /* Занимаем всю доступную ширину */   
-          margin-top: 50px; 
-        }
-      
-        .text p {
-          margin-top: 5%; /* Уменьшаем верхний отступ */
-          margin-bottom: 5%; /* Уменьшаем нижний отступ */
-          font-size: 15px; /* Уменьшаем размер шрифта */
-        }
-      
-        .slider .item img {
-          width: 70%; /* Устанавливаем ширину изображений на 100% */
-          height: 280px;
-        }
-        .nav ul {
-           padding-left: 7px;
-    
-        }
-      
-        .slider p {
-          text-align: center; /* Центрируем текст */
-          font-size: 13px;
-          margin-left: 55px;
-        }
-        .menuBox{
-            margin-left: 13%;
-            margin-right: 0;
-        }
-        .previous{
-            margin-top: 50px;
-            left: -22px;
-    
-        }
-        .next{
-            margin-top: 50px;
-            right: -12px;
-        }
-    
-        .why{
-            margin-top: 0;
-        }
-        .classForCpicok {
-            margin: 10px 15px;
-            font-size: 15px;
-        }
-        h2{
-            font-size: 27px ;
-        }
-        h4{
-            font-size: 20px ;
-        }
-        .imagess{
-            width: 450px;
-        }
-    
-        .left-side p{
+
+    .text {
+        flex: 1;
+        flex: 50% 0;
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 17px;
+    }
+
+    .slider {
+        flex: 1;
+        margin-top: 50px;
+    }
+
+    .text p {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 15px;
+    }
+
+    .classForCpicok {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .imagess {
+        width: 450px;
+    }
+
+    .left-side p {
         font-size: 16px;
-        margin-left: 77px;
-        }
-        .right-side{
-            margin-top: 140px;
-        }
-        .textUnderTitle{
-            font-size: 13px;
-        }
-        .column {
-            padding: 2%;
-            margin: 1% 5% 3% 5%; /* Задайте нужное вам значение расстояния между блоками */
-            height: 250px;
-        }
-        .left-column p{
-            font-size: 12px;
-        }
-        .column img{
-            margin-bottom: 10px;
-            height: 100px;
-        }
-        .column h5{
-            font-size: 15px;
-        }
-        .column p{
-            font-size: 12px ;
-        }
-        .otstyp{
-            margin-bottom: 39px;
-        }
-        .textAndForma{
-            margin-left: 10%;
-        }
     }
-    @media screen and (max-width: 420px) {
-        body{
-            width: 120%;
-        }
-        .nav ul {
-            display: none; /* Скрыть основное меню на маленьких экранах */
-        }
-        
-        .navigationButton {
-            display: block;
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            z-index: 9999; /* Передвинуть кнопку поверх остальных элементов */
-        }
-        
-        .menuBox.active ul {
-            display: flex; /* Показать основное меню при активации кнопки */
-            flex-direction: column; /* Выводить пункты меню в столбик */
-            align-items: flex-start; /* Выравнивать пункты меню по левому краю */
-            padding-left: 0; /* Убрать отступ слева для списка */
-            margin-top: 10px; /* Добавить небольшой отступ сверху */
-        }
-        
-        .logo {
-            position: absolute;
-            right: 0;
-            margin-right: 25px;
-        }
-        
-        .nav p {
-            position: absolute;
-            right: 0;
-            margin-right: 80px;
-        }
-    
-        /* контейнер меню */
-        /* скрываем чекбокс */
-        #menu__toggle {
-            opacity: 0;
-        }
-        /* стилизуем кнопку */
-        .menu__btn {
-            display: flex; /* используем flex для центрирования содержимого */
-            align-items: center;  /* центрируем содержимое кнопки */
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            width: 26px;
-            height: 26px;
-            cursor: pointer;
-            z-index: 1;
-        }
-        /* добавляем "гамбургер" */
-        .menu__btn > span,
-        .menu__btn > span::before,
-        .menu__btn > span::after {
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: #616161;
-        }
-        .menu__btn > span::before {
-            content: '';
-            top: -8px;
-        }
-        .menu__btn > span::after {
-            content: '';
-            top: 8px;
-        }
-        .nav {
-            top: 0;
-            position: fixed;
-            width: 100%;
-            height: 80px;
-            border-bottom: solid 1px black;
-            z-index: 10000;
-            background-color: #F2DED7;
-            display: flex;
-            align-items: center;
-        }
-    
-        .menuBox {
-            display: none; /* Изначально скрываем меню */
-            position: fixed;
-            top: 80px; /* Отступ сверху равен высоте заголовка */
-            width: 100%;
-            background-color: #ECEFF1;
-            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-            padding-top: 10px; /* Добавить отступ сверху */
-        }
-    
-        .menuBox.active {
-            display: block; /* Показываем меню, когда есть класс active */
-        }
-    
-        .menuItem {
-            display: block;
-            padding: 12px 24px;
-            color: #333;
-            font-size: 20px;
-            font-weight: 600;
-            text-decoration: none;
-        }
-    
-        .menuItem:hover {
-            background-color: #CFD8DC;
-            flex:1;
-        }
-    
-        #menu__toggle:checked + .menuBox {
-            display: block;
-        }
-    
-        .menu__btn {
-            display: block;
-            position: fixed;
-            top: 30px;
-            left: 20px;
-            font-size: 24px;
-            cursor: pointer;
-            z-index: 9999;
-        }
-    
-        /* элементы меню */
-        .menuItem {
-            display: block;
-            padding: 12px 24px;
-            color: #333;
-            font-family: 'Roboto', sans-serif;
-            font-size: 20px;
-            font-weight: 600;
-            text-decoration: none;
-        }
-    
-        .menuBox li {
-            display: inline;
-        }
-        h1{
-            margin-left: 1%;
-        }
-        .text p {
-            font-size: 13px;
-            margin-bottom: 0;
-        }
-        .podval{
-            display: block;
-        }
-        .left-side p{
-            font-size: 13px;
-            white-space: nowrap;
-            margin-left: 50%;
-        }
-        .right-side{
-            margin-left: 20%;
-            margin-bottom: 8%;
-            margin-top: 0;
-        }
-        .right-side h4{
-            margin-left: 20%;
-            white-space: nowrap;
-        }
-        .social-media a{
-            width: 110% ;
-            margin-left: 10%;
-        }
-        .imagess{
-            display: block;
-            margin-bottom: 0;
-        }
-        
-           .left-side p{
-            font-size: 16px;
-            margin-left: 77px;
-            }
-            .column {
-                padding: 2%;
-                margin: 1% 5% 3% 5%; /* Задайте нужное вам значение расстояния между блоками */
-                height: 180px;
-                width: 70%;
-            }
-            .column img{
-                margin-bottom: 2px;
-                height: 70px;
-            }
-            .column h5{
-                font-size: 11px;
-            }
-            .column p{
-                font-size: 9px ;
-                margin-top: 0;
-            }
-            .otstyp{
-                margin-bottom: 9px;
-            }
-            .textAndForma{
-                margin-left: 10%;
-            }
-            .textUnderTitle{
-                font-size: 12px;
-            }
-            .centered{
-                font-size: 17px;
-            }
-            .left-column p{
-                font-size: 10px;
-            }
-            form input {
-                width: 50%  ;
-            }
-            input[type="text"],
-            input[type="tel"],
-            button {
-            width: 80%;
-            height: 20px;
-            margin: 2%;
-            font-size: 10px;
-            }
-            .right-column{
-                margin-top: 4%;
-            }
-        
-    
+
+    .textUnderTitle {
+        font-size: 13px;
     }
-    
+
+    .column {
+        padding: 2%;
+        height: 250px;
+    }
+
+    .left-column p {
+        font-size: 12px;
+    }
+
+    .column img {
+        margin-bottom: 10px;
+        height: 100px;
+    }
+
+    .column h5 {
+        font-size: 15px;
+    }
+
+    .column p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        width: 122%;
+    }
+
+    .text p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .column {
+        padding: 2%;
+        /* Задайте нужное вам значение расстояния между блоками */
+        height: 180px;
+        width: 70%;
+    }
+
+    .column img {
+        margin-bottom: 2px;
+        height: 70px;
+    }
+
+    .column h5 {
+        font-size: 11px;
+    }
+
+    .column p {
+        font-size: 9px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .textAndForma {
+        padding-left: 10%;
+    }
+
+    .textUnderTitle {
+        font-size: 12px;
+    }
+
+    .centered {
+        font-size: 17px;
+    }
+
+    .left-column p {
+        font-size: 10px;
+    }
+
+    form input {
+        width: 50%;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    button {
+        width: 80%;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .right-column {
+        margin-top: 4%;
+    }
+}

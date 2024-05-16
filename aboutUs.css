@@ -1,547 +1,380 @@
-body{
-    background-color: #F8F3EF;
-    margin: 0; /* Убираем внешние отступы */
-    padding: 0; /* Убираем внутренние отступы */
+body {
+  margin: 0;
+  background-color: #F8F3EF;
 }
 
-/*Header*/
-/* Общие стили */
-.nav {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    border-bottom: solid 1px black;
-    z-index: 10000;
-    background-color: #F2DED7;
-    display: flex;
-    align-items: center;
-}
-.menu{
-    display: flex;
-    justify-content: space-between;
-    flex-basis:100%;
-}
-.menuBox{
-    display:flex;
-    gap:5px;
-}
-.navigationButton{
-    display: none;
-}
-.nav a {
-    text-decoration: none;
-    color: #71624D;
-    font-family: Inter;
-    font-size: 110%;
-    white-space: nowrap;
-}
-.menu__btn, .nav input{
-    display: none;
-}
-.nav ul {
-    margin-left: auto; /* Перемещение меню вправо */
-    list-style: none;
-    display: flex;
-}
-a{
-    text-decoration: none;
-    color:black;
-}
-.menuBox {
-    text-align: right; 
-    margin-left: 52%;
-}
-
-.menuBox li{
-    margin-left: 15px;
-    margin-right: 10px;
-}
-.nav p {
-    margin: 0;
-    text-align: left;
-    font-family: Inter;
-    font-size: 140%;
-    font-weight: 600;
-}
-
-.logo {
-    padding-top: 6px;
-    margin-left: 1%;
-    margin-right: 10px;
-    width: 58px;
-    float: left;
-    font-family: Inter;
-    font-size: 127%;
-    font-weight: 600;
-}
-
-.logo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 /*подвал*/
 .podval {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.left-side p, .right-side a{
-    font-family: Inter;
-    font-size: 110%;
+
+.left-side p,
+.right-side a {
+  font-family: Inter;
+  font-size: 110%;
 }
- h2 {
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+
+h2 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-h1, h2, h3 {
-    text-align: center;
-    font-family: Abhaya Libre;
-    letter-spacing: 6px;
-    font-size: 250%;
-    font-weight: 800;
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: Abhaya Libre;
+  letter-spacing: 6px;
+  font-size: 250%;
+  font-weight: 800;
 }
-h4{
-    font-family: Abhaya Libre;
-    letter-spacing: 1%;
-    font-size: 170%;
-    font-weight: 800; 
+
+h4 {
+  font-family: Abhaya Libre;
+  letter-spacing: 1%;
+  font-size: 170%;
+  font-weight: 800;
 }
+
 .left-side,
 .right-side {
-    width: 45%;
+  width: 45%;
 }
+
 .left-side {
-    text-align: center;
+  text-align: center;
 }
+
 .imagess {
-    margin-top: 2%;
-    margin-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
 .right-side {
-    margin-top: 3%;
-    border-radius: 1%;
+  margin-top: 3%;
+  border-radius: 1%;
 }
-.social-media  {
-    border-radius: 1%;
-    margin-left: 20%;
-    margin-top: 4%;
+
+.social-media {
+  border-radius: 1%;
+  margin-left: 20%;
+  margin-top: 4%;
 }
-h4{
-    margin-right: 3%;
+
+h4 {
+  margin-right: 3%;
 }
-h4, .social-media a{
-    text-align: center;
-}
+
+h4,
 .social-media a {
-    display: block;
-    margin: 3% 2% 3% 0;
-    padding: 1%;
-    border-radius: 25px; /* Закругляем углы */
-    background-color: #D9E8E8; /* Серый цвет фона */
-    width: 65%;
-    height: 30px;
+  text-align: center;
 }
+
+.social-media a {
+  display: block;
+  margin: 3% 2% 3% 0;
+  padding: 1%;
+  border-radius: 25px;
+  background-color: #D9E8E8;
+  width: 65%;
+  height: 30px;
+}
+
 /* Основное содержимое */
-main{
-    margin-top: 7%;
+main {
+  margin-top: 7%;
 }
- /*первый абзац*/
- .container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2% 0% 3% 4%;
-    align-items: center; /* Выравнивание содержимого по вертикали */
+
+/*первый абзац*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px;
 }
 
 .text {
-    flex: 0 0 60%; /* Жестко задаем ширину текста */
-    margin-right: 3%; /* Расстояние между текстом и изображением */
-    margin-left: 3%;
-}
-.slider .item {
-    position: relative; /* Делаем позиционирование элементов относительно .item */
-    display: flex;
-    align-items: center; /* Выравнивание по центру по вертикали */
+  flex: 0 0 60%;
 }
 
-.previous, .next {
-    position: absolute; /* Позиционируем абсолютно */
-    top: 50%; /* Размещаем по вертикали на середине блока */
-    transform: translateY(-50%); /* Сдвигаем на половину высоты элемента вверх */
-    width: 50px; /* Ширина кнопок */
-    height: 50px; /* Высота кнопок */
-    border: none; /* Убираем границу кнопок */
-    color: black; /* Цвет иконок стрелок */
-    font-size: 24px; /* Размер иконок стрелок */
-    cursor: pointer; /* Изменяем курсор при наведении */
-    z-index: 1; /* Помещаем кнопки поверх изображений */
+.slider .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.previous,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .previous {
-    left: 0; /* Положение кнопки "назад" слева */
+  left: 0;
 }
 
 .next {
-    right: 0; /* Положение кнопки "вперед" справа */
-
+  right: 0;
 }
 
 .slider {
-    flex: 1; /* Растягиваем слайдер на всю доступную ширину */
-    margin-top: 2%;
-    margin-left: 3%;
+  flex: 1;
 }
 
 .item {
-    display: none;
+  display: none;
 }
-.item img{
-margin-left: 13%;
-margin-bottom: 1%;
-}
-.text p {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-family: Inter;
-    font-size: 120%;
-}
+
 .item img {
-    object-fit: cover;
-    width: 70%;
-    height: 470px;
+  justify-content: center;
+  margin-bottom: 1%;
 }
+
+.text p {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-family: Inter;
+  font-size: 120%;
+}
+
+.item img {
+  width: 50%;
+  height: 460px;
+}
+
 .slider {
-    object-fit: cover;
-    height: 470px;
+  height: 470px;
+  justify-content: center;
 }
+
 .slider .item {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  justify-content: center;
 }
-.slider p{
-    font-family: Abhaya Libre;
-    color: #71624D;
-    background-color: #F2DED7 ;
-    border-radius: 12px;
-    margin-top: 0;
-    font-size: 170%;
-    width: 60%;
-    margin-left: 18%;
-    font-weight: 500;
-    text-align: center;
-    position: relative;
+
+.slider p {
+  text-align: center;
+  font-family: Abhaya Libre;
+  color: #71624D;
+  background-color: #F2DED7;
+  border-radius: 12px;
+  margin-top: 0;
+  font-size: 170%;
+  font-weight: 500;
 }
+
 /*Второй абзац*/
 .why {
-    text-align: center; /* Центрируем заголовок */
-    background-color: #F2DED7;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border: solid 1px black;
+  text-align: center;
+  background-color: #F2DED7;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: solid 1px black;
 }
+
 .cpicok {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .classForCpicok {
-    flex: 1;
-    font-family: Inter;
-    font-size: 120%;
-    text-align: left;
+  flex: 1;
+  font-family: Inter;
+  font-size: 120%;
+  text-align: left;
 }
-.classForCpicok li {
-    margin-top: 4%;
-    margin-bottom: 5%;
-} 
 
+.classForCpicok li {
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+@media screen   and (max-width: 1440px){
+  .item img{
+    height: 380px;
+  }
+  
+}
+@media screen and (max-width: 1100px){
+  .item img{
+    width: 70%;
+    height: 380px;
+  }
+  .slider p{
+    font-size: 15px;
+  }
+  .slider{
+    padding-top: 12%;
+  }
+  .text p{
+    font-size: 17px;
+  }
+  .container{
+    align-items: center;
+  }
+  
+}
 
 @media screen and (max-width: 744px) {
-h1{
+  h1 {
     margin-top: 90px;
     font-size: 33px;
     margin-bottom: 0;
-}
+  }
 
-.logo{
-    width: 50px;
-}
-.nav a{
-    font-size: 90%;
-    margin-top: 20px;
-}
-.container{
-    margin: 0 15px;
-}
-.item img {
-    margin-right: 20px;
-    margin-top: 60px;
-} 
- .text {
-      flex: 1; /* Занимаем всю доступную ширину */
-      flex: 50% 0;
-      margin-left: 0; /* Убираем левый отступ */
-      margin-top: 0;
-      font-size: 17px;
-    }
+  .text {
+    flex: 1;
+    flex: 50% 0;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 17px;
+  }
 
-  .previous, .next{
+  .previous,
+  .next {
     margin-left: 33px;
-    }
-    .slider {
-      flex: 1; /* Занимаем всю доступную ширину */   
-      margin-top: 50px; 
-    }
-  
-    .text p {
-      margin-top: 5%; /* Уменьшаем верхний отступ */
-      margin-bottom: 5%; /* Уменьшаем нижний отступ */
-      font-size: 15px; /* Уменьшаем размер шрифта */
-    }
-  
-    .slider .item img {
-      width: 70%; /* Устанавливаем ширину изображений на 100% */
-      height: 280px;
-    }
-    .nav ul {
-       padding-left: 7px;
+  }
 
-    }
-  
-    .slider p {
-      text-align: center; /* Центрируем текст */
-      font-size: 13px;
-      margin-left: 55px;
-    }
-    .menuBox{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .previous{
-        margin-top: 50px;
-        left: -22px;
+  .slider {
+    flex: 1;
+  }
 
-    }
-    .next{
-        margin-top: 50px;
-        right: -12px;
-    }
+  .text p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
 
-    .why{
-        margin-top: 0;
-    }
-    .classForCpicok {
-        margin: 10px 15px;
-        font-size: 15px;
-    }
-    h2{
-        font-size: 27px ;
-    }
-    h4{
-        font-size: 20px ;
-    }
-    .imagess{
-        width: 450px;
-    }
+   .item img {
+    width: 70%;
+    height: 310px;
+    padding: 30px;
+  }
+  .slider p {
+    text-align: center;
+    font-size: 13px;
+    margin-left: 55px;
+  }
 
-    .left-side p{
+  .previous {
+    margin-top: 50px;
+    left: -22px;
+  }
+
+  .next {
+    margin-top: 50px;
+    right: -12px;
+  }
+
+  .why {
+    margin-top: 0;
+  }
+
+  .classForCpicok {
+    margin: 10px 15px;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .imagess {
+    width: 450px;
+  }
+
+  .left-side p {
     font-size: 16px;
-    margin-left: 77px;
-    }
-    .right-side{
-        margin-top: 140px;
-    }
+  }
+
+  .right-side {
+    margin-top: 140px;
+  }
 }
-@media screen and (max-width: 420px) {
-    .nav ul {
-        display: none; /* Скрыть основное меню на маленьких экранах */
-    }
-    
-    .navigationButton {
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        z-index: 9999; /* Передвинуть кнопку поверх остальных элементов */
-    }
-    
-    .menuBox.active ul {
-        display: flex; /* Показать основное меню при активации кнопки */
-        flex-direction: column; /* Выводить пункты меню в столбик */
-        align-items: flex-start; /* Выравнивать пункты меню по левому краю */
-        padding-left: 0; /* Убрать отступ слева для списка */
-        margin-top: 10px; /* Добавить небольшой отступ сверху */
-    }
-    
-    .logo {
-        position: absolute;
-        right: 0;
-        margin-right: 25px;
-    }
-    
-    .nav p {
-        position: absolute;
-        right: 0;
-        margin-right: 80px;
-    }
 
-    /* контейнер меню */
-    /* скрываем чекбокс */
-    #menu__toggle {
-        opacity: 0;
-    }
-    /* стилизуем кнопку */
-    .menu__btn {
-        display: flex; /* используем flex для центрирования содержимого */
-        align-items: center;  /* центрируем содержимое кнопки */
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        z-index: 1;
-    }
-    /* добавляем "гамбургер" */
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #616161;
-    }
-    .menu__btn > span::before {
-        content: '';
-        top: -8px;
-    }
-    .menu__btn > span::after {
-        content: '';
-        top: 8px;
-    }
-    .nav {
-        top: 0;
-        position: fixed;
-        width: 100%;
-        height: 80px;
-        border-bottom: solid 1px black;
-        z-index: 10000;
-        background-color: #F2DED7;
-        display: flex;
-        align-items: center;
-    }
+@media screen and (max-width: 425px) {
 
-    .menuBox {
-        display: none; /* Изначально скрываем меню */
-        position: fixed;
-        top: 80px; /* Отступ сверху равен высоте заголовка */
-        width: 100%;
-        background-color: #ECEFF1;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        padding-top: 10px; /* Добавить отступ сверху */
-    }
+  h1 {
+    margin-left: 1%;
+  }
 
-    .menuBox.active {
-        display: block; /* Показываем меню, когда есть класс active */
-    }
+  .text p {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
 
-    .menuItem {
-        display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-    }
+  main {
+    width: 106%;
+  }
 
-    .menuItem:hover {
-        background-color: #CFD8DC;
-        flex:1;
-    }
+  .container {
+    display: block;
+    margin-bottom: 0;
+  }
 
-    #menu__toggle:checked + .menuBox {
-        display: block;
-    }
+  .slider {
+    margin-right: 2%;
+    margin-bottom: 0;
+  }
 
-    .menu__btn {
-        display: block;
-        position: fixed;
-        top: 30px;
-        left: 20px;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 9999;
-    }
+  .classForCpicok li {
+    font-size: 14px;
+    margin-top: 10px;
+  }
 
-    /* элементы меню */
-    .menuItem {
-        display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-    }
+  .classForCpicok {
+    margin: 0;
+  }
 
-    .menuBox li {
-        display: inline;
-    }
-    h1{
-        margin-left: 1%;
-    }
-    .text p {
-        font-size: 13px;
-        margin-bottom: 0;
-    }
-    main{
-        width: 120%;
-    }
-    .container{
-        display: block;
-        margin-bottom: 0s;
-    }
-    .slider{
-        margin-top: 1%;
-        margin-right: 2%;
-        margin-bottom: 0;
-    }
-    .classForCpicok li{
-        font-size: 14px;
-        margin-top: 10px;
-    }
-    .classForCpicok{
-        margin: 0;
-    }
-    .podval{
-        display: block;
-    }
-    .left-side p{
-        font-size: 13px;
-        white-space: nowrap;
-        margin-left: 50%;
-    }
-    .right-side{
-        margin-left: 20%;
-        margin-top: 5%;
-        margin-bottom: 8%;
-    }
-    .right-side h4{
-        margin-left: 20%;
-        white-space: nowrap;
-    }
-    .social-media a{
-        width: 110% ;
-        margin-left: 10%;
-    }
-    .imagess{
-        display: block;
-    }
+  .podval {
+    display: block;
+  }
 
+  .left-side p {
+    font-size: 13px;
+    white-space: nowrap;
+    margin-left: 50%;
+  }
+
+  .right-side {
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+
+  .right-side h4 {
+    margin-left: 20%;
+    white-space: nowrap;
+  }
+
+  .social-media a {
+    width: 110%;
+    margin-left: 10%;
+  }
+
+  .imagess {
+    display: block;
+  }
+}
+@media screen and (max-width: 320px) {
+  .why {
+    width: 116%;
+  }
+  .container{
+    width: 110%;
+  }
 }
